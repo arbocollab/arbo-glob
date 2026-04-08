@@ -1,1 +1,713 @@
-// source stylesheet
+// ============================================================
+// DESIGN TOKENS - PRIMITIVES
+// ============================================================
+// Source: Figma Design System Export
+// Last Updated: February 2026
+// 
+// The foundational color palette used throughout the app.
+// ============================================================
+
+// ------------------------------------------------------------
+// GENERAL COLORS
+// ------------------------------------------------------------
+$white: #FFFFFF;
+$black: #232323;
+
+// ------------------------------------------------------------
+// GREY
+// ------------------------------------------------------------
+$grey-500: #FAFAFA;  // Lightest grey
+$grey-400: #F3F5F8;  // Light grey
+$grey-350: #E0E0E0;  // Mid-light grey
+$grey-300: #D7D7D7;  // Mid grey
+$grey-200: #A6A6A6;  // Dark grey
+$grey-100: #6B6B6B;  // Darkest grey
+
+// ------------------------------------------------------------
+// BLUE
+// ------------------------------------------------------------
+$blue-300: #F0F7FF;  // Lightest blue
+$blue-200: #7BCAFF;  // Mid blue
+$blue-100: #3C9BFA;  // Darkest blue
+
+// ------------------------------------------------------------
+// RED (Error/Danger)
+// ------------------------------------------------------------
+$red-300: #FEE4E2;   // Lightest red
+$red-200: #F04438;   // Mid red
+$red-100: #D92D20;   // Darkest red
+
+// ------------------------------------------------------------
+// GREEN (Success)
+// ------------------------------------------------------------
+$green-300: #CCF3EB; // Lightest green
+$green-200: #02C39A; // Mid green
+$green-100: #00A18D; // Darkest green
+
+// ------------------------------------------------------------
+// ORANGE
+// ------------------------------------------------------------
+$orange-300: #FEECDC; // Lightest orange
+$orange-200: #FFB966; // Mid orange
+$orange-100: #F7941D; // Primary orange
+
+// ------------------------------------------------------------
+// STATIC COLORS
+// ------------------------------------------------------------
+$tilemoji-red-150: #F28B82;
+$tilemoji-yellow-150: #FDCB6E;
+$tilemoji-green-150: #81C784;
+$tilemoji-blue-150: #73BFFD;
+$tilemoji-purple-150: #BA68C8;
+$tilemoji-orange-150: #FF8A65;
+$tilemoji-grey-150: #90A4AE;
+$tilemoji-brown-150: #A1887F;
+
+// ------------------------------------------------------------
+// TYPOGRAPHY
+// ------------------------------------------------------------
+$font-primary: "Lato", sans-serif;
+
+$font-xs: 9px;
+$font-sm: 12px;
+$font-base: 14px;
+$font-lg: 18px;
+$font-xl: 20px;
+$font-2xl: 24px;
+$font-4xl: 36px;
+$font-6xl: 56px;
+
+$font-regular: 400;
+$font-bold: 700;
+
+// ------------------------------------------------------------
+// SPACING
+// ------------------------------------------------------------
+$spacing-0: 0px;
+$spacing-0-5: 2px;
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 20px;
+$spacing-6: 24px;
+$spacing-7: 28px;
+$spacing-8: 32px;
+$spacing-9: 36px;
+$spacing-10: 40px;
+$spacing-11: 44px;
+$spacing-12: 48px;
+$spacing-13: 52px;
+$spacing-14: 56px;
+$spacing-15: 60px;
+$spacing-16: 64px;
+$spacing-17: 68px;
+$spacing-18: 72px;
+$spacing-19: 76px;
+$spacing-20: 80px;
+
+// ------------------------------------------------------------
+// BORDER RADIUS
+//
+// With a base font size of 14px on the body, 1rem equals 14px 
+// and scales accordingly.
+// ------------------------------------------------------------
+$radius-xs: 2px;
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-xl: 12px;
+$radius-2xl: 16px;
+$radius-3xl: 24px;
+$radius-full: 9999px;
+
+// ------------------------------------------------------------
+// BORDER
+// ------------------------------------------------------------
+$border: 1px;
+$border-1-5: 1.5px;
+$border-2: 2px;
+$border-3: 3px;
+$border-4: 4px;
+$border-5: 5px;
+$border-6: 6px;
+
+// ------------------------------------------------------------
+// Outline
+// ------------------------------------------------------------
+$outline: 1px;
+
+// ------------------------------------------------------------
+// SHADOW
+// ------------------------------------------------------------
+$shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+--text-xs: 9px;
+--text-sm: 12px;
+--text-base: 14px;
+--text-lg: 18px;
+--text-xl: 20px;
+--text-2xl: 24px;
+--text-4xl: 36px;
+--text-6xl: 56px;
+
+--font-size: var(--text-base);
+font-size: var(--font-size);
+color: var(--text-primary);
+
+--font-regular: 400;
+--font-bold: 700;
+
+// ----------------------------------------------------------
+// Spacing (Figma uses 3.5px base unit)
+// TODO: Discuss with design team about standardizing to 4px
+// ----------------------------------------------------------
+--spacing-0: 0px;
+--spacing-0-5: 1.75px;
+--spacing-1: 3.5px;
+--spacing-2: 7px;
+--spacing-3: 10.5px;
+--spacing-4: 14px;
+--spacing-5: 17.5px;
+--spacing-6: 21px;
+--spacing-7: 24.5px;
+--spacing-8: 28px;
+--spacing-9: 31.5px;
+--spacing-10: 35px;
+--spacing-11: 38.5px;
+--spacing-12: 42px;
+
+// ----------------------------------------------------------
+// Border Radius (Figma scale)
+// TODO: Confirm with design if 8px should be 7px or 10.5px
+// ----------------------------------------------------------
+--radius-xs: 1.75px;
+--radius-sm: 3.5px;
+--radius-md: 5.25px;
+--radius-lg: 7px;
+--radius-xl: 10.5px;
+--radius-2xl: 14px;
+--radius-3xl: 21px;
+--radius-full: 9999px;
+
+// Legacy (keeping until design confirms)
+--card-border-radius: 8px;
+
+// ----------------------------------------------------------
+// Shadows & Effects
+// ----------------------------------------------------------
+--card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+--focus-shadow: 0 0 5px 0 rgba(163, 212, 245, 0.9), 0 1px 2px 0 rgba(163, 212, 245, 0.5);
+
+// ----------------------------------------------------------
+// Component Dimensions
+// ----------------------------------------------------------
+--default-height: 32px;
+--button-size: 32px;
+--input-width: 200px;
+
+// Layout spacing (using current values until spacing decision)
+--card-gap: 12px;
+--card-padding: 16px;
+--box-padding: 12px;
+
+// ----------------------------------------------------------
+// Table Specific
+// ----------------------------------------------------------
+--item-table-height: 400px;
+--item-table-header-height: 40px;
+--ag-value-change-value-highlight-background-color: #{$blue-300};
+
+// ----------------------------------------------------------
+// Grid
+// ----------------------------------------------------------
+--grid-template: 1fr 1fr;
+--g-number: 1;
+--g-size: 1fr;
+
+// ----------------------------------------------------------
+// Avatar
+// ----------------------------------------------------------
+--avatar-size: 32px;
+--avatar-border: #{$grey-300};
+
+// ----------------------------------------------------------
+// Badge
+// ----------------------------------------------------------
+--badge-size: 16px;
+--badge-color: #{$grey-350};
+
+// ----------------------------------------------------------
+// Calendar
+// ----------------------------------------------------------
+--arbo-calendar-width: 100%;
+--arbo-calendar-outside-color: #{$grey-200};
+
+// ----------------------------------------------------------
+// Skeleton Loading
+// ----------------------------------------------------------
+--background-skeleton: linear-gradient(
+  90deg,
+  #{$grey-500} 0%,
+  #{$grey-500} 20%,
+  #{$grey-400} 40%,
+  #{$grey-350} 50%,
+  #{$grey-400} 60%,
+  #{$grey-500} 80%,
+  #{$grey-500} 100%
+);
+
+// ----------------------------------------------------------
+// Misc Effects
+// ----------------------------------------------------------
+--multiply-color: rgba(0, 0, 0, 0.05);
+--active-color: var(--primary-color);
+
+
+// ==========================================================
+// BUTTON TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Button - Primary
+// ----------------------------------------------------------
+--button-primary-bg-default: #{$blue-100};      // #3C9BFA
+--button-primary-bg-hover: #{$orange-100};      // #F7941D
+--button-primary-text: #{$color-white};         // #FFFFFF
+
+// ----------------------------------------------------------
+// Button - Secondary
+// ----------------------------------------------------------
+--button-secondary-bg-default: #{$grey-400};    // #F3F5F8
+--button-secondary-text-default: #{$blue-100};  // #3C9BFA
+--button-secondary-border-default: #{$color-white}; // #FFFFFF
+--button-secondary-border-thickness: 1px;
+--button-secondary-bg-hover: #{$orange-300};    // #FEECDC
+--button-secondary-text-hover: #{$orange-100};  // #F7941D
+
+// ----------------------------------------------------------
+// Button - Tertiary
+// ----------------------------------------------------------
+--button-tertiary-text-default: #{$blue-100};   // #3C9BFA
+--button-tertiary-text-hover: #{$orange-100};   // #F7941D
+--button-tertiary-icon-default: #{$grey-100};   // #6B6B6B (icon-only variant)
+--button-tertiary-icon-hover: #{$blue-100};     // #3C9BFA (icon-only variant)
+
+// ----------------------------------------------------------
+// Button - Disabled (all button types)
+// ----------------------------------------------------------
+--button-disabled-bg: #{$grey-300};             // #D7D7D7
+--button-disabled-text: #{$grey-200};           // #A6A6A6
+--button-disabled-border: #{$grey-400};         // #F3F5F8
+--button-disabled-border-thickness: 1px;
+
+// ----------------------------------------------------------
+// Button - Warning/Danger Primary
+// ----------------------------------------------------------
+--button-danger-bg-default: #{$red-100};        // #D92D20
+--button-danger-bg-hover: #{$red-200};          // #F04438
+--button-danger-text: #{$color-white};          // #FFFFFF
+
+// ----------------------------------------------------------
+// Button - Warning/Danger Secondary
+// ----------------------------------------------------------
+--button-danger-secondary-bg-default: #{$grey-400};  // #F3F5F8
+--button-danger-secondary-border: #{$color-white};   // #FFFFFF
+--button-danger-secondary-bg-hover: #{$red-300};     // #FEE4E2
+--button-danger-secondary-text: #{$red-100};         // #D92D20
+
+// ----------------------------------------------------------
+// Button - Warning/Danger Tertiary
+// ----------------------------------------------------------
+--button-danger-tertiary-text-default: #{$red-100};  // #D92D20
+--button-danger-tertiary-text-hover: #{$red-200};    // #F04438
+
+// ----------------------------------------------------------
+// Button - Selected State (filter applied, etc.)
+// ----------------------------------------------------------
+--button-selected-bg: #{$blue-300};             // #F0F7FF
+--button-selected-border: #{$blue-100};         // #3C9BFA
+--button-selected-text: #{$color-black};        // #232323
+--button-selected-icon: #{$color-black};        // #232323
+
+// ----------------------------------------------------------
+// Button - Clear/Dismiss Icon (in selected buttons)
+// ----------------------------------------------------------
+--button-clear-icon-default: #{$grey-100};      // #6B6B6B
+--button-clear-icon-hover: #{$blue-100};        // #3C9BFA
+
+
+// ==========================================================
+// INPUT BOX / INPUT FIELD TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Input - Default State
+// ----------------------------------------------------------
+--input-bg-default: #{$grey-500};               // #FAFAFA
+--input-text-default: #{$color-black};          // #232323
+--input-text-placeholder: #{$grey-200};         // #A6A6A6
+--input-text-helper: #{$grey-100};              // #6B6B6B (helper text below input)
+--input-border-default: #{$grey-400};           // #F3F5F8
+--input-border-thickness-default: 1px;
+
+// ----------------------------------------------------------
+// Input - Hover State
+// ----------------------------------------------------------
+--input-bg-hover: #{$color-white};              // #FFFFFF
+
+// ----------------------------------------------------------
+// Input - Focus State
+// ----------------------------------------------------------
+--input-bg-focus: #{$color-white};              // #FFFFFF
+--input-border-focus: #{$blue-100};             // #3C9BFA
+--input-border-thickness-focus: 1.5px;
+
+// ----------------------------------------------------------
+// Input - Error State
+// ----------------------------------------------------------
+--input-border-error: #{$red-100};              // #D92D20
+--input-error-message: #{$red-100};             // #D92D20
+
+// ----------------------------------------------------------
+// Input - Disabled State
+// ----------------------------------------------------------
+--input-bg-disabled: #{$grey-300};              // #D7D7D7
+--input-text-disabled: #{$grey-200};            // #A6A6A6
+--input-border-thickness-disabled: 1px;
+
+
+// ==========================================================
+// DROPDOWN / SELECT TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Dropdown Container
+// ----------------------------------------------------------
+--dropdown-bg: #{$color-white};                 // #FFFFFF
+--dropdown-text: #{$color-black};               // #232323
+--dropdown-description: #{$grey-100};           // #6B6B6B (secondary text)
+--dropdown-icon: #{$grey-200};                  // #A6A6A6 (dropdown arrow icon)
+
+// ----------------------------------------------------------
+// Dropdown List Item - Hover State
+// ----------------------------------------------------------
+--dropdown-item-bg-hover: #{$blue-300};         // #F0F7FF
+
+// ----------------------------------------------------------
+// Dropdown List Item - Focus/Selected State
+// ----------------------------------------------------------
+--dropdown-item-bg-focus: #{$blue-300};         // #F0F7FF
+--dropdown-item-border-focus: #{$blue-100};     // #3C9BFA
+--dropdown-item-border-thickness-focus: 4px;
+
+// ----------------------------------------------------------
+// Dropdown - Remove/Delete Item
+// ----------------------------------------------------------
+--dropdown-remove-bg-hover: #{$red-300};        // #FEE4E2
+--dropdown-remove-icon: #{$red-100};            // #D92D20
+
+// ----------------------------------------------------------
+// Dropdown - Disabled State
+// ----------------------------------------------------------
+--dropdown-bg-disabled: #{$grey-300};           // #D7D7D7
+--dropdown-text-disabled: #{$grey-200};         // #A6A6A6
+
+
+// ==========================================================
+// CHIP / TAG TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Chip - Default State
+// ----------------------------------------------------------
+--chip-bg-default: #{$grey-500};                // #FAFAFA
+--chip-text: #{$color-black};                   // #232323
+--chip-border-default: #{$grey-300};            // #D7D7D7
+--chip-border-thickness: 1px;
+
+// ----------------------------------------------------------
+// Chip - Hover State
+// ----------------------------------------------------------
+--chip-bg-hover: #{$blue-300};                  // #F0F7FF
+
+// ----------------------------------------------------------
+// Chip - Error State
+// ----------------------------------------------------------
+--chip-bg-error: #{$red-300};                   // #FEE4E2
+--chip-border-error: #{$red-100};               // #D92D20
+
+
+// ==========================================================
+// TAB TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Tab - Default State
+// ----------------------------------------------------------
+--tab-bg-default: #{$color-white};              // #FFFFFF
+--tab-text-default: #{$grey-100};               // #6B6B6B (secondary text)
+--tab-icon-default: #{$grey-100};               // #6B6B6B (secondary text)
+--tab-border-default: #{$grey-400};             // #F3F5F8
+--tab-border-thickness-default: 1px;
+
+// ----------------------------------------------------------
+// Tab - Hover State
+// ----------------------------------------------------------
+--tab-bg-hover: #{$orange-300};                 // #FEECDC
+--tab-text-hover: #{$orange-100};               // #F7941D
+--tab-icon-hover: #{$orange-100};               // #F7941D
+
+// ----------------------------------------------------------
+// Tab - Active/Focus State (selected tab)
+// ----------------------------------------------------------
+--tab-bg-focus: #{$blue-300};                   // #F0F7FF
+--tab-text-focus: #{$color-black};              // #232323
+--tab-icon-focus: #{$color-black};              // #232323
+--tab-border-focus: #{$blue-100};               // #3C9BFA
+--tab-border-thickness-focus: 3px;
+
+// ----------------------------------------------------------
+// Tab - Disabled State
+// ----------------------------------------------------------
+--tab-bg-disabled: #{$grey-300};                // #D7D7D7
+--tab-text-disabled: #{$grey-200};              // #A6A6A6
+--tab-icon-disabled: #{$grey-200};              // #A6A6A6
+
+// ----------------------------------------------------------
+// Tab - Error State
+// ----------------------------------------------------------
+--tab-error-message: #{$red-100};               // #D92D20
+--tab-bg-error: #{$red-300};                    // #FEE4E2
+--tab-text-error: #{$color-black};              // #232323
+--tab-icon-error: #{$color-black};              // #232323
+--tab-clear-icon-error-default: #{$grey-100};   // #6B6B6B
+--tab-clear-icon-error-hover: #{$red-200};      // #F04438
+--tab-border-error: #{$red-100};                // #D92D20
+--tab-border-thickness-error: 1px;
+
+
+// ==========================================================
+// CHECKBOX TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Checkbox - Default/Unchecked State
+// ----------------------------------------------------------
+--checkbox-bg-default: #{$color-white};         // #FFFFFF
+--checkbox-border-default: #{$grey-200};        // #A6A6A6
+--checkbox-border-thickness: 1.5px;
+
+// ----------------------------------------------------------
+// Checkbox - Hover State
+// ----------------------------------------------------------
+--checkbox-bg-hover: #{$blue-300};              // #F0F7FF
+
+// ----------------------------------------------------------
+// Checkbox - Checked State
+// ----------------------------------------------------------
+--checkbox-bg-checked: #{$blue-100};            // #3C9BFA
+--checkbox-border-checked: #{$blue-100};        // #3C9BFA
+--checkbox-icon-checked: #{$color-white};       // #FFFFFF (checkmark)
+
+// ----------------------------------------------------------
+// Checkbox - Disabled State
+// ----------------------------------------------------------
+--checkbox-bg-disabled: #{$grey-300};           // #D7D7D7
+--checkbox-border-disabled: #{$grey-400};       // #F3F5F8
+--checkbox-text-disabled: #{$grey-200};         // #A6A6A6
+
+// ----------------------------------------------------------
+// Checkbox - Error State
+// ----------------------------------------------------------
+--checkbox-error-message: #{$red-100};          // #D92D20
+
+
+// ==========================================================
+// RADIO BUTTON TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Radio - Default/Unselected State
+// ----------------------------------------------------------
+--radio-bg-default: #{$color-white};            // #FFFFFF
+--radio-border-default: #{$grey-200};           // #A6A6A6
+--radio-border-thickness: 1.5px;
+
+// ----------------------------------------------------------
+// Radio - Hover State
+// ----------------------------------------------------------
+--radio-bg-hover: #{$blue-300};                 // #F0F7FF
+
+// ----------------------------------------------------------
+// Radio - Selected State
+// ----------------------------------------------------------
+--radio-border-selected: #{$blue-100};          // #3C9BFA
+--radio-border-thickness-selected: 6px;         // Thick border = filled appearance
+
+// ----------------------------------------------------------
+// Radio - Disabled State
+// ----------------------------------------------------------
+--radio-bg-disabled: #{$grey-300};              // #D7D7D7
+--radio-border-disabled: #{$grey-400};          // #F3F5F8
+--radio-text-disabled: #{$grey-200};            // #A6A6A6
+
+// ----------------------------------------------------------
+// Radio - Error State
+// ----------------------------------------------------------
+--radio-error-message: #{$red-100};             // #D92D20
+
+
+// ==========================================================
+// BREADCRUMB TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Breadcrumb - Default (clickable items)
+// ----------------------------------------------------------
+--breadcrumb-text-default: #{$grey-100};        // #6B6B6B
+--breadcrumb-text-hover: #{$blue-100};          // #3C9BFA
+
+// ----------------------------------------------------------
+// Breadcrumb - Current Page (non-clickable)
+// ----------------------------------------------------------
+--breadcrumb-text-current: #{$grey-200};        // #A6A6A6
+
+// ----------------------------------------------------------
+// Breadcrumb - Focus State
+// ----------------------------------------------------------
+--breadcrumb-text-focus: #{$color-black};       // #232323
+
+// ----------------------------------------------------------
+// Breadcrumb - Navigation Variant (on dark backgrounds)
+// ----------------------------------------------------------
+--breadcrumb-nav-text: #{$color-white};         // #FFFFFF
+
+
+// ==========================================================
+// TOOLTIP TOKENS
+// ==========================================================
+
+--tooltip-bg: #{$grey-100};                     // #6B6B6B
+--tooltip-text: #{$color-white};                // #FFFFFF
+
+
+// ==========================================================
+// SNACKBAR / TOAST TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Snackbar - Info
+// ----------------------------------------------------------
+--snackbar-info-bg: #{$blue-300};               // #F0F7FF
+--snackbar-info-text: #{$blue-100};             // #3C9BFA
+
+// ----------------------------------------------------------
+// Snackbar - Success
+// ----------------------------------------------------------
+--snackbar-success-bg: #{$green-300};           // #CCF3EB
+--snackbar-success-text: #{$green-100};         // #00A18D
+
+// ----------------------------------------------------------
+// Snackbar - Danger/Error
+// ----------------------------------------------------------
+--snackbar-danger-bg: #{$red-300};              // #FEE4E2
+--snackbar-danger-text: #{$red-100};            // #D92D20
+
+// ----------------------------------------------------------
+// Snackbar - Warning
+// ----------------------------------------------------------
+--snackbar-warning-bg: #{$orange-300};          // #FEECDC
+--snackbar-warning-text: #{$orange-100};        // #F7941D
+
+// ----------------------------------------------------------
+// Snackbar - Neutral (default)
+// ----------------------------------------------------------
+--snackbar-neutral-bg: #{$color-white};         // #FFFFFF
+--snackbar-neutral-text: #{$color-black};       // #232323
+
+// ----------------------------------------------------------
+// Snackbar - Close Icon
+// ----------------------------------------------------------
+--snackbar-close-icon: #{$grey-200};            // #A6A6A6
+--snackbar-close-icon-neutral: #{$grey-200};    // #A6A6A6
+
+
+// ==========================================================
+// GENERAL TOKENS
+// ==========================================================
+
+// ----------------------------------------------------------
+// Backgrounds
+// ----------------------------------------------------------
+--bg-surface-primary: #{$color-white};          // #FFFFFF
+--bg-surface-secondary: #{$grey-400};           // #F3F5F8
+--bg-surface-archive: #{$grey-350};             // #E0E0E0
+--bg-input: #{$grey-400};                       // #F3F5F8
+
+// ----------------------------------------------------------
+// Text Colors
+// ----------------------------------------------------------
+--text-primary: #{$color-black};                // #232323
+--text-secondary: #{$grey-100};                 // #6B6B6B
+--text-tertiary: #{$color-white};               // #FFFFFF
+--text-inactive: #{$grey-200};                  // #A6A6A6
+
+// ----------------------------------------------------------
+// Borders
+// ----------------------------------------------------------
+--border-default: #{$grey-400};                 // #F3F5F8
+--border-selected: #{$blue-100};                // #3C9BFA
+
+// ----------------------------------------------------------
+// State - Hover
+// ----------------------------------------------------------
+--hover-bg-default: #{$blue-300};               // #F0F7FF (light blue)
+--hover-bg-danger: #{$red-300};                 // #FEE4E2 (light red)
+
+// ----------------------------------------------------------
+// State - Success
+// ----------------------------------------------------------
+--success-default: #{$green-200};               // #02C39A
+--success-hover: #{$green-100};                 // #00A18D
+--success-bg: #{$green-300};                    // #CCF3EB
+
+// ----------------------------------------------------------
+// State - Warning
+// ----------------------------------------------------------
+--warning-default: #{$orange-100};              // #F7941D
+--warning-bg: #{$orange-300};                   // #FEECDC
+
+// ----------------------------------------------------------
+// State - Error/Danger
+// ----------------------------------------------------------
+--error-default: #{$red-100};                   // #D92D20
+--error-hover: #{$red-200};                     // #F04438
+--error-bg: #{$red-300};                        // #FEE4E2
+
+
+// ==========================================================
+// LEGACY COMPATIBILITY
+// ==========================================================
+// These maintain backwards compatibility with existing code
+// Gradually migrate to new token names above
+// ==========================================================
+
+--primary-color: var(--button-primary-bg-default);
+--primary-color-hover: var(--button-primary-bg-hover);
+--danger-color: var(--error-default);
+--danger-color-hover: var(--error-hover);
+--success-color: var(--success-default);
+--warning-color: var(--warning-default);
+--disabled-color: var(--button-disabled-bg);
+--disable-text-color: var(--button-disabled-text);
+--background-color: var(--bg-surface-primary);
+--bg-secondary: var(--bg-surface-secondary);
+--bg-inactive-color: var(--bg-surface-archive);
+--text-color: var(--text-primary);
+--text-inactive-color: var(--text-inactive);
+--border-color: var(--border-default);
+--selected-border-color: var(--border-selected);
+--hover-color: var(--hover-bg-default);
+--hover-color-danger: var(--hover-bg-danger);
+--hover-selected-color: var(--button-selected-bg);

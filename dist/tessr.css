@@ -1,1 +1,427 @@
-/* compiled css */
+:root {
+
+  --white: #FFFFFF;
+  --black: #232323;
+
+  --grey-500: #FAFAFA;
+  --grey-400: #F3F5F8;
+  --grey-350: #E0E0E0;
+  --grey-300: #D7D7D7;
+  --grey-200: #A6A6A6;
+  --grey-100: #6B6B6B;
+
+  --blue-300: #F0F7FF;
+  --blue-200: #7BCAFF;
+  --blue-100: #3C9BFA;
+
+  --red-300: #FEE4E2;
+  --red-200: #F04438;
+  --red-100: #D92D20;
+
+  --green-300: #CCF3EB;
+  --green-200: #02C39A;
+  --green-100: #00A18D;
+
+  --orange-300: #FEECDC;
+  --orange-200: #FFB966;
+  --orange-100: #F7941D;
+
+  --tilemoji-red-150: #F28B82;
+  --tilemoji-yellow-150: #FDCB6E;
+  --tilemoji-green-150: #81C784;
+  --tilemoji-blue-150: #73BFFD;
+  --tilemoji-purple-150: #BA68C8;
+  --tilemoji-orange-150: #FF8A65;
+  --tilemoji-grey-150: #90A4AE;
+  --tilemoji-brown-150: #A1887F;
+
+  --font-primary: "Lato", sans-serif;
+
+  --font-xs: 9px;
+  --font-sm: 12px;
+  --font-base: 14px;
+  --font-lg: 18px;
+  --font-xl: 20px;
+  --font-2xl: 24px;
+  --font-4xl: 36px;
+  --font-6xl: 56px;
+
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --spacing-0: 0px;
+  --spacing-0-5: 2px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-9: 36px;
+  --spacing-10: 40px;
+  --spacing-11: 44px;
+  --spacing-12: 48px;
+  --spacing-13: 52px;
+  --spacing-14: 56px;
+  --spacing-15: 60px;
+  --spacing-16: 64px;
+  --spacing-17: 68px;
+  --spacing-18: 72px;
+  --spacing-19: 76px;
+  --spacing-20: 80px;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+  --radius-full: 9999px;
+
+  --border: 1px;
+  --border-1-5: 1.5px;
+  --border-2: 2px;
+  --border-3: 3px;
+  --border-4: 4px;
+  --border-5: 5px;
+  --border-6: 6px;
+
+  --outline: 1px;
+
+  --shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+  --text-xs: 9px;
+  --text-sm: 12px;
+  --text-base: 14px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-4xl: 36px;
+  --text-6xl: 56px;
+
+  --font-size: var(--text-base);
+    font-size: var(--font-size);
+    color: var(--text-primary);
+
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --spacing-0: 0px;
+  --spacing-0-5: 1.75px;
+  --spacing-1: 3.5px;
+  --spacing-2: 7px;
+  --spacing-3: 10.5px;
+  --spacing-4: 14px;
+  --spacing-5: 17.5px;
+  --spacing-6: 21px;
+  --spacing-7: 24.5px;
+  --spacing-8: 28px;
+  --spacing-9: 31.5px;
+  --spacing-10: 35px;
+  --spacing-11: 38.5px;
+  --spacing-12: 42px;
+
+  --radius-xs: 1.75px;
+  --radius-sm: 3.5px;
+  --radius-md: 5.25px;
+  --radius-lg: 7px;
+  --radius-xl: 10.5px;
+  --radius-2xl: 14px;
+  --radius-3xl: 21px;
+  --radius-full: 9999px;
+
+  --card-border-radius: 8px;
+
+  --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --focus-shadow: 0 0 5px 0 rgba(163, 212, 245, 0.9), 0 1px 2px 0 rgba(163, 212, 245, 0.5);
+
+  --default-height: 32px;
+  --button-size: 32px;
+  --input-width: 200px;
+
+  --card-gap: 12px;
+  --card-padding: 16px;
+  --box-padding: 12px;
+
+  --item-table-height: 400px;
+  --item-table-header-height: 40px;
+  --ag-value-change-value-highlight-background-color: var(--blue-300);
+
+  --grid-template: 1fr 1fr;
+  --g-number: 1;
+  --g-size: 1fr;
+
+  --avatar-size: 32px;
+  --avatar-border: var(--grey-300);
+
+  --badge-size: 16px;
+  --badge-color: var(--grey-350);
+
+  --arbo-calendar-width: 100%;
+  --arbo-calendar-outside-color: var(--grey-200);
+
+  --background-skeleton: linear-gradient(
+    90deg,
+    var(--grey-500) 0%,
+    var(--grey-500) 20%,
+    var(--grey-400) 40%,
+    var(--grey-350) 50%,
+    var(--grey-400) 60%,
+    var(--grey-500) 80%,
+    var(--grey-500) 100%
+  );
+
+  --multiply-color: rgba(0, 0, 0, 0.05);
+  --active-color: var(--primary-color);
+
+
+
+  --button-primary-bg-default: var(--blue-100);
+  --button-primary-bg-hover: var(--orange-100);
+  --button-primary-text: var(--color-white);
+
+  --button-secondary-bg-default: var(--grey-400);
+  --button-secondary-text-default: var(--blue-100);
+  --button-secondary-border-default: var(--color-white);
+  --button-secondary-border-thickness: 1px;
+  --button-secondary-bg-hover: var(--orange-300);
+  --button-secondary-text-hover: var(--orange-100);
+
+  --button-tertiary-text-default: var(--blue-100);
+  --button-tertiary-text-hover: var(--orange-100);
+  --button-tertiary-icon-default: var(--grey-100);
+  --button-tertiary-icon-hover: var(--blue-100);
+
+  --button-disabled-bg: var(--grey-300);
+  --button-disabled-text: var(--grey-200);
+  --button-disabled-border: var(--grey-400);
+  --button-disabled-border-thickness: 1px;
+
+  --button-danger-bg-default: var(--red-100);
+  --button-danger-bg-hover: var(--red-200);
+  --button-danger-text: var(--color-white);
+
+  --button-danger-secondary-bg-default: var(--grey-400);
+  --button-danger-secondary-border: var(--color-white);
+  --button-danger-secondary-bg-hover: var(--red-300);
+  --button-danger-secondary-text: var(--red-100);
+
+  --button-danger-tertiary-text-default: var(--red-100);
+  --button-danger-tertiary-text-hover: var(--red-200);
+
+  --button-selected-bg: var(--blue-300);
+  --button-selected-border: var(--blue-100);
+  --button-selected-text: var(--color-black);
+  --button-selected-icon: var(--color-black);
+
+  --button-clear-icon-default: var(--grey-100);
+  --button-clear-icon-hover: var(--blue-100);
+
+
+
+  --input-bg-default: var(--grey-500);
+  --input-text-default: var(--color-black);
+  --input-text-placeholder: var(--grey-200);
+  --input-text-helper: var(--grey-100);
+  --input-border-default: var(--grey-400);
+  --input-border-thickness-default: 1px;
+
+  --input-bg-hover: var(--color-white);
+
+  --input-bg-focus: var(--color-white);
+  --input-border-focus: var(--blue-100);
+  --input-border-thickness-focus: 1.5px;
+
+  --input-border-error: var(--red-100);
+  --input-error-message: var(--red-100);
+
+  --input-bg-disabled: var(--grey-300);
+  --input-text-disabled: var(--grey-200);
+  --input-border-thickness-disabled: 1px;
+
+
+
+  --dropdown-bg: var(--color-white);
+  --dropdown-text: var(--color-black);
+  --dropdown-description: var(--grey-100);
+  --dropdown-icon: var(--grey-200);
+
+  --dropdown-item-bg-hover: var(--blue-300);
+
+  --dropdown-item-bg-focus: var(--blue-300);
+  --dropdown-item-border-focus: var(--blue-100);
+  --dropdown-item-border-thickness-focus: 4px;
+
+  --dropdown-remove-bg-hover: var(--red-300);
+  --dropdown-remove-icon: var(--red-100);
+
+  --dropdown-bg-disabled: var(--grey-300);
+  --dropdown-text-disabled: var(--grey-200);
+
+
+
+  --chip-bg-default: var(--grey-500);
+  --chip-text: var(--color-black);
+  --chip-border-default: var(--grey-300);
+  --chip-border-thickness: 1px;
+
+  --chip-bg-hover: var(--blue-300);
+
+  --chip-bg-error: var(--red-300);
+  --chip-border-error: var(--red-100);
+
+
+
+  --tab-bg-default: var(--color-white);
+  --tab-text-default: var(--grey-100);
+  --tab-icon-default: var(--grey-100);
+  --tab-border-default: var(--grey-400);
+  --tab-border-thickness-default: 1px;
+
+  --tab-bg-hover: var(--orange-300);
+  --tab-text-hover: var(--orange-100);
+  --tab-icon-hover: var(--orange-100);
+
+  --tab-bg-focus: var(--blue-300);
+  --tab-text-focus: var(--color-black);
+  --tab-icon-focus: var(--color-black);
+  --tab-border-focus: var(--blue-100);
+  --tab-border-thickness-focus: 3px;
+
+  --tab-bg-disabled: var(--grey-300);
+  --tab-text-disabled: var(--grey-200);
+  --tab-icon-disabled: var(--grey-200);
+
+  --tab-error-message: var(--red-100);
+  --tab-bg-error: var(--red-300);
+  --tab-text-error: var(--color-black);
+  --tab-icon-error: var(--color-black);
+  --tab-clear-icon-error-default: var(--grey-100);
+  --tab-clear-icon-error-hover: var(--red-200);
+  --tab-border-error: var(--red-100);
+  --tab-border-thickness-error: 1px;
+
+
+
+  --checkbox-bg-default: var(--color-white);
+  --checkbox-border-default: var(--grey-200);
+  --checkbox-border-thickness: 1.5px;
+
+  --checkbox-bg-hover: var(--blue-300);
+
+  --checkbox-bg-checked: var(--blue-100);
+  --checkbox-border-checked: var(--blue-100);
+  --checkbox-icon-checked: var(--color-white);
+
+  --checkbox-bg-disabled: var(--grey-300);
+  --checkbox-border-disabled: var(--grey-400);
+  --checkbox-text-disabled: var(--grey-200);
+
+  --checkbox-error-message: var(--red-100);
+
+
+
+  --radio-bg-default: var(--color-white);
+  --radio-border-default: var(--grey-200);
+  --radio-border-thickness: 1.5px;
+
+  --radio-bg-hover: var(--blue-300);
+
+  --radio-border-selected: var(--blue-100);
+  --radio-border-thickness-selected: 6px;
+
+  --radio-bg-disabled: var(--grey-300);
+  --radio-border-disabled: var(--grey-400);
+  --radio-text-disabled: var(--grey-200);
+
+  --radio-error-message: var(--red-100);
+
+
+
+  --breadcrumb-text-default: var(--grey-100);
+  --breadcrumb-text-hover: var(--blue-100);
+
+  --breadcrumb-text-current: var(--grey-200);
+
+  --breadcrumb-text-focus: var(--color-black);
+
+  --breadcrumb-nav-text: var(--color-white);
+
+
+
+  --tooltip-bg: var(--grey-100);
+  --tooltip-text: var(--color-white);
+
+
+
+  --snackbar-info-bg: var(--blue-300);
+  --snackbar-info-text: var(--blue-100);
+
+  --snackbar-success-bg: var(--green-300);
+  --snackbar-success-text: var(--green-100);
+
+  --snackbar-danger-bg: var(--red-300);
+  --snackbar-danger-text: var(--red-100);
+
+  --snackbar-warning-bg: var(--orange-300);
+  --snackbar-warning-text: var(--orange-100);
+
+  --snackbar-neutral-bg: var(--color-white);
+  --snackbar-neutral-text: var(--color-black);
+
+  --snackbar-close-icon: var(--grey-200);
+  --snackbar-close-icon-neutral: var(--grey-200);
+
+
+
+  --bg-surface-primary: var(--color-white);
+  --bg-surface-secondary: var(--grey-400);
+  --bg-surface-archive: var(--grey-350);
+  --bg-input: var(--grey-400);
+
+  --text-primary: var(--color-black);
+  --text-secondary: var(--grey-100);
+  --text-tertiary: var(--color-white);
+  --text-inactive: var(--grey-200);
+
+  --border-default: var(--grey-400);
+  --border-selected: var(--blue-100);
+
+  --hover-bg-default: var(--blue-300);
+  --hover-bg-danger: var(--red-300);
+
+  --success-default: var(--green-200);
+  --success-hover: var(--green-100);
+  --success-bg: var(--green-300);
+
+  --warning-default: var(--orange-100);
+  --warning-bg: var(--orange-300);
+
+  --error-default: var(--red-100);
+  --error-hover: var(--red-200);
+  --error-bg: var(--red-300);
+
+
+
+  --primary-color: var(--button-primary-bg-default);
+  --primary-color-hover: var(--button-primary-bg-hover);
+  --danger-color: var(--error-default);
+  --danger-color-hover: var(--error-hover);
+  --success-color: var(--success-default);
+  --warning-color: var(--warning-default);
+  --disabled-color: var(--button-disabled-bg);
+  --disable-text-color: var(--button-disabled-text);
+  --background-color: var(--bg-surface-primary);
+  --bg-secondary: var(--bg-surface-secondary);
+  --bg-inactive-color: var(--bg-surface-archive);
+  --text-color: var(--text-primary);
+  --text-inactive-color: var(--text-inactive);
+  --border-color: var(--border-default);
+  --selected-border-color: var(--border-selected);
+  --hover-color: var(--hover-bg-default);
+  --hover-color-danger: var(--hover-bg-danger);
+  --hover-selected-color: var(--button-selected-bg);
+}
