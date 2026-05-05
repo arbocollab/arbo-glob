@@ -55,8 +55,21 @@ arbo-glob/
 
 ---
 
+### 🎨 i18n Translation file
+- Go to `src/i18n/en-error.json`
+- Update the message inside based on the i18n structure
+- The version folder is used for backward compatibility, example `src/i18n/1.0.0/en-error.json`
+
+---
+
+### 📝 Changelog
+- Navigate to `src/i18n/changelog/`
+- Refer to the `README.md` inside for updates and version history of translation files
+
+---
+
 ## ⚠️ Notes
 
 - Always update configuration via `.env.json`
-- Use compiled files from `dist/` for production
+- Use compiled files styles from `dist/` for production
 - Check changelog regularly for updates and breaking changes
