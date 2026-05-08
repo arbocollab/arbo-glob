@@ -1,0 +1,87 @@
+{
+  "GEN": {
+    "general_error": "General Error",
+    "validation_error": "Validation error occurred.",
+    "data_locked": "Update failed. Record(s) are locked or currently being updated. You may try again later.",
+    "unauthenticated": "Authentication required. Please log in to continue.",
+    "unauthorized": "Access denied. You don’t have permission to view this.",
+    "not_found": "Resource not found. Check link or try again.",
+    "server_error": "Something went wrong on our end. Please try again later.",
+    "validation_rules": {
+      "required": "The {field} field is required",
+      "unique": "The {field} field must be unique",
+      "email": "{field} must be a valid email address",
+      "emails": "Invalid email(s) pattern",
+      "email_exists": "{field} already exists in workspace {value}",
+      "regex": "The {field} format is invalid",
+      "min": "{field} must be at least {value} characters",
+      "max": "{field} cannot exceed {value} characters",
+      "between": "{field} must be between {value} characters",
+      "numeric": "The {field} must be a number",
+      "integer": "The {field} must be an integer",
+      "date": "The {field} must be a valid date",
+      "after": "The {field} must be after {value}",
+      "before": "The {field} must be before {value}",
+      "image": "The {field} must be an image",
+      "mimes": "The {field} must be a file of type: {value}",
+      "max_file_size": "The {field} size cannot exceed {value}MB",
+      "confirmed": "The {field} confirmation does not match",
+      "same": "The {field} must match {value}",
+      "exists": "The Selected {field} is invalid",
+      "password_requirements": "The {field} does not meet security requirements",
+      "decimal": "Update failed. Maximum allowed decimal places is {value}.",
+      "before_or_equal": "{field}  must be a date before or equal {value}.",
+      "after_or_equal": "{field} must be a date after or equal {value}.",
+      "in": "Update failed. Only these values are allowed: {value}.",
+      "not_in": "Update failed. These values are not allowed: {value}."
+    }
+  },
+  "MRC": {
+    "validation_rules": {
+      "not_in": "Update failed. These values are not allowed: {value}.",
+      "in": "Update failed. Only these values are allowed: {value}.",
+      "between": "Update failed. Enter a value between {value}."
+    },
+    "excess_decimal_places": "Update failed. Maximum allowed decimal places is {value}."
+  },
+  "PPL": {
+    "invite_deleted_user": "Invitation failed. Users deleted from the workspace can't be re-invited. Please contact support.",
+    "insufficient_seats": "Invitation failed. No seats remaining. Purchase seat(s) to continue."
+  },
+  "TM": {
+    "NO_ENTITY_TO_UNDEPLOY": "Undeploy failed. No entity specified.",
+    "NO_TEAM_EDITOR_ROLE": "No team editor role."
+  },
+  "DIR": {
+    "has_project_admin_access": "Update failed. User has project access by default.",
+    "NO_EDIT_ENTITY_TEAM_ACCESS": "No permission to edit entity team."
+  },
+  "AS": {
+    "invalid_field (TBD)": "Something went wrong with account creation. Please contact support."
+  },
+  "custom_default_msg": {
+    "general": {
+      "invalid_data": "Invalid data provided",
+      "retry": "Try again later"
+    },
+    "network": {
+      "offline": "You are currently offline. Please check your network connection.",
+      "request_timeout": "Your request has timed out. Please ensure your internet connection is stable.",
+      "network_problem": "Network problem. Request timed out. Please try again later.",
+      "network_connection_lost": "Network connection lost",
+      "gateway_timeout": "Gateway Timeout"
+    },
+    "auth": {
+      "token_expired": "Token refresh failed"
+    },
+    "storage": {
+      "storage_limit": "Storage limit exceeded",
+      "thumbnail_size_limit": "Thumbnail picture size can not exceed 2MB",
+      "thumbnail_picture_format": "Thumbnail picture must be image format",
+      "upload_limit": "Your upload exceeds the maximum allowed size"
+    }
+  },
+  "fallback": {
+    "unknownError": "An error occurred. Please try again or contact support."
+  }
+}
