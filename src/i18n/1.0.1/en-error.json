@@ -6,6 +6,7 @@
     "unauthenticated": "Authentication required. Please log in to continue.",
     "unauthorized": "Access denied. You don’t have permission to view this.",
     "not_found": "Resource not found. Check link or try again.",
+    "too_many_attempts": "Too many requests. Please wait a moment and try again later.",
     "server_error": "Something went wrong on our end. Please try again later.",
     "validation_rules": {
       "required": "The {field} field is required",
@@ -44,9 +45,16 @@
     },
     "excess_decimal_places": "Update failed. Maximum allowed decimal places is {value}."
   },
+  "WS": {
+    "invalid": "Workspace unavailable. You don’t have access to this workspace.",
+    "require_otp": "Two-factor authentication required. Please set up 2FA to access workspace.",
+    "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings."
+  },
   "PPL": {
     "invite_deleted_user": "Invitation failed. Users deleted from the workspace can't be re-invited. Please contact support.",
-    "insufficient_seats": "Invitation failed. No seats remaining. Purchase seat(s) to continue."
+    "insufficient_seats": "Invitation failed. No seats remaining. Purchase seat(s) to continue.",
+    "invitee_account_mismatch": "This invitation can't be used with the account you're currently signed in with.",
+    "invalid_token": "Invitation invalid. Please request a new invitation."
   },
   "TM": {
     "NO_ENTITY_TO_UNDEPLOY": "Undeploy failed. No entity specified.",
@@ -54,10 +62,21 @@
   },
   "DIR": {
     "has_project_admin_access": "Update failed. User has project access by default.",
-    "NO_EDIT_ENTITY_TEAM_ACCESS": "No permission to edit entity team."
+    "NO_EDIT_ENTITY_TEAM_ACCESS": "No permission to edit entity team.",
+    "parent_is_archived": "Unarchive failed. Unarchive parent first."
+  },
+  "DAR": {
+    "no_wbar_permission": "Access denied. You don't have permission to view this. Please contact your admin.",
+    "no_pbar_permission": "Access denied. You don't have permission to perform this action. Please contact your admin."
   },
   "AS": {
-    "invalid_field (TBD)": "Something went wrong with account creation. Please contact support."
+    "tnc_not_accepted": "Terms & Conditions not accepted. Please accept the Terms & Conditions to continue.",
+    "blocked": "Account blocked. Please contact support for assistance.",
+    "not_verified": "Verification required. Please verify your account.",
+    "not_found": "Account required. Please create an account."
+  },
+  "BLN": {
+    "no_license": "Subscription required. Please purchase subscription to continue."
   },
   "custom_default_msg": {
     "general": {
