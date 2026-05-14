@@ -1,5 +1,72 @@
 # Changelog
 
+## v3.0.1 - May 14, 2026
+
+## 🆕 **Design Tokens Update**
+## Spacing
+- `--tessr-spacing-1-5` (`6px`)
+
+## Component Coverage Expanded
+
+### Status Picker
+- `--tessr-status-picker-border`
+- `--border-width`
+
+### Refine
+- `--tessr-refine-border-default`
+- `--border-width-default`
+
+### Forms
+- `--tessr-form-bg-read-only`
+
+### Table
+- `--tessr-table-bg-hover`
+
+### Badge
+- `--tessr-badge-fg-pill`
+- `--badge-bg-overflow`
+- `--badge-fg-overflow`
+
+### Bar
+- `--tessr-bar-placeholder`
+
+### Progress Bar (New Component)
+- Background / foreground tokens
+- Warning variants
+
+### Typography
+- `.font-mono` (`JetBrains Mono`)
+
+### Gradients
+Added:
+- `--gradient-point`
+
+### Hover States
+Hover states shifted from orange → blue
+
+- `--tessr-bar-bg-hover`
+- `--tessr-card-bg-hover`
+
+### Gradients
+Renamed:
+- `--gradient-award` → `--gradient-woohoo`
+
+### Overlay Opacity
+Updated opacity:
+- `0.08` → `0.2`
+
+Affected components:
+- Status picker hover overlays
+- Color picker hover overlays
+
+### Avatar
+Border width updated:
+- `1.5px` → `1px`
+
+Token:
+- `--tessr-avatar-border-width-me`
+
+
 ## v3.0.0 - April 9, 2026
 
 ### 🎉 Initial Release
