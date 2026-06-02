@@ -1,0 +1,153 @@
+:root {
+  --pop-up-height: 89vh;
+}
+
+.arbo-global-search {
+  top: 128px !important;
+}
+
+/* Media query for desktop screens */
+@media screen and (min-width: 1920px) {
+  .arbo-global-search {
+    top: 140px !important;
+    max-height: 75vh !important;
+  }
+}
+
+/* Standard laptop screens */
+@media screen and (min-width: 1536px) and (max-width: 1919px) {
+  .arbo-global-search {
+    top: 80px !important;
+    max-height: 65vh !important;
+  }
+}
+
+/* Smaller laptop screens */
+@media screen and (min-width: 1024px) and (max-width: 1536px) {
+  .arbo-global-search {
+    top: 25px !important;
+    max-height: 60vh !important;
+  }
+}
+
+.arbo-app-loader-wrapper {
+  --loader-z-index: 800;
+  z-index: var(--loader-z-index) !important;
+}
+
+/* styling for web search */
+#web-search-id {
+  --popup-width: 1000px;
+  --popup-height: 600px;
+  --top: 7px !important;
+}
+
+@media screen and (max-width: 1052px) {
+  .global-search-main {
+    overflow: unset;
+    overflow-y: hidden;
+    width: min-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: hidden !important;
+  }
+
+  .arbo-app-loader-show {
+    overflow-x: auto !important;
+  }
+}
+
+.arbo-app-loader-popup {
+  width: var(--popup-width) !important;
+  min-width: unset !important;
+  height: 100% !important;
+  background: #fff !important;
+  border-radius: 7px !important;
+  -webkit-box-shadow: 0 4px 12px #0006 !important;
+  box-shadow: 0 4px 12px #0006 !important;
+  overflow: auto !important;
+}
+
+/* styling for people insight */
+#people-insight-id {
+  --popup-width: 95vw !important;
+  --popup-height: 90vh !important;
+  --popup-max-height: 100vh !important;
+}
+
+#people-insight-id .arbo-instance-people_insight .main-layout {
+  height: 95vh !important;
+  border-radius: 8px;
+  padding-bottom: 8px;
+}
+
+.arbo-select__list-wrapper {
+  z-index: 9999 !important;
+}
+
+/* styling for web scene */
+#scene-hub-id {
+  --popup-width: 95vw !important;
+  --popup-height: 90vh !important;
+  --popup-max-height: 100vh !important;
+  --popup-min-width: 1200px !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main {
+  height: var(--popup-height) !important;
+  border-radius: 8px !important;
+  min-width: var(--popup-min-width) !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main.denied-access {
+  grid-template-rows: 100% calc(100% - 172px) 32px !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main.denied-access .arbo-no-access .no-access-bg {
+  border-radius: 8px !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main .screen-content .arbo-scene-body .arbo-content-layout > .content {
+  height: calc(95vh - 170px) !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main .screen-content .arbo-scene-body .arbo-content-layout .comment .arbo-comments {
+  height: calc(95vh - 172px) !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main .screen-content .arbo-scene-body .arbo-content-layout .comment .arbo-comments .comment-header {
+  height: auto !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main .screen-footer {
+  border-radius: 0 0 8px 8px !important;
+  min-width: 100% !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main .screen-footer .footer .arbo-status-button .advanced-select {
+  border-radius: 0 0 0 8px !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main .screen-footer .footer .arbo-status-button .advanced-select:hover > .arbo-select {
+  border-radius: 0 0 0 8px !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .scene-main .screen-footer .footer .arbo-status-button .arbo-btn.next-status {
+  border-radius: 0 0 8px 0 !important;
+}
+
+#scene-hub-id .arbo-instance-scene_hub .no-access-container {
+  min-height: 100% !important;
+}
+
+.dropdown-content {
+  z-index: 9999 !important;
+}
+
+/* item table v2 */
+#item-table-v2-container > .arbo-app-loader-content {
+  z-index: unset;
+}
