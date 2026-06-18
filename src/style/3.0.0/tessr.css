@@ -71,8 +71,8 @@
   --tessr-spacing-18: 72px;
   --tessr-spacing-19: 76px;
   --tessr-spacing-20: 80px;
-  --tessr-status-picker-overlay-hover-black: rgba(255, 255, 255, 0.2);
-  --tessr-status-picker-overlay-hover-color: rgba(35, 35, 35, 0.2);
+  --tessr-status-picker-overlay-hover-black: rgba(255, 255, 255, 0.08);
+  --tessr-status-picker-overlay-hover-color: rgba(35, 35, 35, 0.08);
   --tessr-font-xs: 9px;
   --tessr-orange-200: #FFB966FF;
   --tessr-spacing-0-5: 2px;
@@ -81,9 +81,8 @@
   --tessr-border-8: 8px;
   --tessr-border-9: 9px;
   --tessr-border-10: 10px;
-  --tessr-color-picker-overlay-hover-black: rgba(255, 255, 255, 0.2);
-  --tessr-color-picker-overlay-hover-color: rgba(35, 35, 35, 0.2);
-  --tessr-spacing-1-5: 6px;
+  --tessr-color-picker-overlay-hover-black: rgba(255, 255, 255, 0.08);
+  --tessr-color-picker-overlay-hover-color: rgba(35, 35, 35, 0.08);
 }
 
 /* Aliases  */
@@ -219,8 +218,8 @@
   --tessr-refine-border-width-focus: var(--tessr-border-1-5);
   --tessr-refine-fg-disabled: var(--tessr-grey-200);
   --tessr-refine-bg-disabled: var(--tessr-grey-300);
-  --tessr-status-picker-border: var(--tessr-grey-400);
-  --tessr-status-picker-border-width: var(--tessr-border-1);
+  --tessr-status-picker-border-hover: var(--tessr-blue-300);
+  --tessr-status-picker-border-width-hover: var(--tessr-border-1);
   --tessr-status-picker-fg-light: var(--tessr-black);
   --tessr-status-picker-fg-dark: var(--tessr-white);
   --tessr-tooltip-bg: var(--tessr-grey-100);
@@ -253,7 +252,7 @@
   --tessr-text-toggle-text-default: var(--tessr-grey-200);
   --tessr-refine-fg-hover: var(--tessr-orange-100);
   --tessr-bar-bg-default: var(--tessr-grey-400);
-  --tessr-bar-bg-hover: var(--tessr-blue-300);
+  --tessr-bar-bg-hover: var(--tessr-orange-300);
   --tessr-bar-border-focus: var(--tessr-blue-100);
   --tessr-bar-border-default: var(--tessr-border);
   --tessr-bar-border-width-focus: var(--tessr-border-1-5);
@@ -346,7 +345,7 @@
   --tessr-bar-bg-focus: var(--tessr-blue-300);
   --tessr-button-disabled-tertiary-fg: var(--tessr-grey-300);
   --tessr-avatar-border-me: var(--tessr-primary);
-  --tessr-avatar-border-width-me: var(--tessr-border-1);
+  --tessr-avatar-border-width-me: var(--tessr-border-1-5);
   --tessr-bar-icon: var(--tessr-grey-200);
   --tessr-bar-bg-disabled: var(--tessr-button-disabled-bg);
   --tessr-bar-fg-disabled: var(--tessr-button-disabled-fg);
@@ -357,7 +356,7 @@
   --tessr-card-text: var(--tessr-text-primary);
   --tessr-card-sub-text: var(--tessr-text-secondary);
   --tessr-card-icon: var(--tessr-grey-200);
-  --tessr-card-bg-hover: var(--tessr-blue-300);
+  --tessr-card-bg-hover: var(--tessr-orange-300);
   --tessr-card-bg-focus: var(--tessr-blue-300);
   --tessr-card-border-focus: var(--tessr-blue-100);
   --tessr-card-border-width-focus: var(--tessr-border-1-5);
@@ -381,26 +380,13 @@
   --tessr-slider-indicator-bg-default: var(--tessr-grey-400);
   --tessr-slider-indicator-bg-hover: var(--tessr-accent);
   --tessr-slider-indicator-bg-selected: var(--tessr-primary);
-  --tessr-refine-border-default: var(--tessr-white);
-  --tessr-refine-border-width-default: var(--tessr-border-1);
-  --tessr-form-bg-read-only: var(--tessr-grey-400);
-  --tessr-table-bg-hover: var(--tessr-blue-300);
-  --tessr-badge-fg-pill: var(--tessr-text-secondary);
-  --tessr-badge-bg-overflow: var(--tessr-disabled);
-  --tessr-badge-fg-overflow: var(--tessr-black);
-  --tessr-bar-placeholder: var(--tessr-grey-200);
-  --tessr-progress-bar-bg: var(--tessr-grey-400);
-  --tessr-progress-bar-fg: var(--tessr-primary);
-  --tessr-progress-bar-bg-warning: var(--tessr-orange-300);
-  --tessr-progress-bar-fg-warning: var(--tessr-orange-100);
 }
 
 /* Color Styles  */
 :root {
   --gradient-beta: linear-gradient(180deg, rgba(235, 0, 255, 1) 0%, rgba(106, 92, 255, 1) 100%);
   --gradient-loading: linear-gradient(180deg, rgba(247, 148, 29, 1) 0%, rgba(243, 245, 248, 1) 100% );
-  --gradient-woohoo: linear-gradient(180deg, rgba(247, 148, 29, 1) 0%, rgba(255, 62, 62, 1) 100%);
-  --gradient-point: linear-gradient(180deg, rgba(110, 231, 183, 1) 0%, rgba(96, 165, 250, 1) 100%);
+  --gradient-award: linear-gradient(180deg, rgba(247, 148, 29, 1) 0%, rgba(255, 62, 62, 1) 100%);
 }
 
 /* Text Styles  */
@@ -456,12 +442,6 @@
   font-family: Lato;
   font-size: 12px;
   font-weight: 700;
-}
-
-.font-mono {
-  font-family: JetBrains Mono;
-  font-size: 12px;
-  font-weight: 400;
 }
 
 .font-xs-bold {
