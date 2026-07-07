@@ -73,3 +73,6 @@ arbo-glob/
 - Always update configuration via `.env.json`
 - Use compiled files styles from `dist/` for production
 - Check changelog regularly for updates and breaking changes
+
+## Architecture
+<img src="asset-flow.png" width="70%" alt="Architecture">
