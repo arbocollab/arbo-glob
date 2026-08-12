@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.2 - August 12, 2026
+
+### 🔧 Details
+- update general message
+
 ## v1.0.1 - May 11, 2026
 
 ### 🔧 Details
