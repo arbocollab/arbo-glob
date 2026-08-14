@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.3 - August 14, 2026
+
+### 🔧 Details
+- update account setting module error message
+
 ## v1.0.2 - August 12, 2026
 
 ### 🔧 Details
