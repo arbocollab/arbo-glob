@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.4 - August 19, 2026
+
+### 🔧 Details
+- update TESSR Review module error message
+
 ## v1.0.3 - August 14, 2026
 
 ### 🔧 Details
