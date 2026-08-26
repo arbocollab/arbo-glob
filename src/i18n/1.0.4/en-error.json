@@ -49,7 +49,8 @@
   "WS": {
     "invalid": "Workspace unavailable. You don’t have access to this workspace.",
     "require_otp": "Two-factor authentication required. Please set up 2FA to access workspace.",
-    "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings."
+    "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings.",
+    "insufficient_ws_storage": "Upload failed. Workspace storage is full. Please contact your admin."
   },
   "PPL": {
     "invite_deleted_user": "Invitation failed. Users deleted from the workspace can't be re-invited. Please contact support.",
