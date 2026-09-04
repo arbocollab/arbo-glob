@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.4 - August 26, 2026
+
+### 🔧 Details
+- update TESSR Review module error message
+- added `ws.insufficient_ws_storage` error message
+
 ## v1.0.3 - August 14, 2026
 
 ### 🔧 Details
