@@ -49,8 +49,7 @@
   "WS": {
     "invalid": "Workspace unavailable. You don’t have access to this workspace.",
     "require_otp": "Two-factor authentication required. Please set up 2FA to access workspace.",
-    "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings.",
-    "insufficient_ws_storage": "Upload failed. Workspace storage is full. Please contact your admin."
+    "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings."
   },
   "PPL": {
     "invite_deleted_user": "Invitation failed. Users deleted from the workspace can't be re-invited. Please contact support.",
@@ -80,11 +79,6 @@
   },
   "BLN": {
     "no_license": "Subscription required. Please purchase subscription to continue."
-  },
-  "MDA": {
-    "delete_last_review_file": "Deletion failed. Cannot delete last review file. Delete rendition.",
-    "previous_marker_removed": "Marker has been removed. Please reload.",
-    "rendition_not_empty": "Deletion failed. Contact a supervisor or admin."
   },
   "custom_default_msg": {
     "general": {
