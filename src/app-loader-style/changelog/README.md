@@ -1,4 +1,9 @@
 # Changelog
+## v1.0.3 - Oct 9, 2026
+
+### 🔧 Details
+- add global style for toolbox feedback-merge-lockup
+
 ## v1.0.2 - Sep 21, 2026
 
 ### 🔧 Details
