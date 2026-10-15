@@ -157,8 +157,9 @@
 }
 
 #xlsx-toolbox-id {
-  --popup-width: 1200px;
-  --popup-height: 80vh;
+  --popup-width: 95vw;
+  --popup-height: auto;
+  --popup-max-height: 90vh;
   --top: 60px !important;
   --left: calc((100vw - var(--popup-width)) / 2);
 }
