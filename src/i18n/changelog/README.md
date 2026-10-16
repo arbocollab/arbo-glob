@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.6 - October 16, 2026
+
+### 🔧 Details
+- fix typo on `storage.thumbnail_size_limit`
+
 ## v1.0.5 - October 16, 2026
 
 ### 🔧 Details
