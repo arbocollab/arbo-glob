@@ -1,0 +1,118 @@
+{
+  "GEN": {
+    "general_error": "General Error",
+    "bad_request": "Invalid request. Check your data and try again.",
+    "validation_error": "Validation error occurred.",
+    "data_locked": "Update failed. Record(s) are locked or currently being updated. Try again later.",
+    "unauthenticated": "Authentication required. Sign in to continue.",
+    "unauthorized": "Access denied. You don't have permission to view this.",
+    "not_found": "Resource not found. Check link or try again.",
+    "too_many_attempts": "Too many requests. Wait a moment and try again.",
+    "server_error": "Something went wrong on our end. Try again later.",
+    "expired": "Link expired. Request a new one and try again.",
+    "validation_rules": {
+      "required": "{field} is required.",
+      "unique": "The {field} field must be unique",
+      "email": "{field} must be a valid email address",
+      "emails": "Invalid email(s) pattern",
+      "email_exists": "{field} already exists in workspace {value}.",
+      "regex": "The {field} format is invalid",
+      "min": "{field} must be at least {value} characters",
+      "max": "{field} cannot exceed {value} characters",
+      "between": "{field} must be between {min} and {max} characters.",
+      "numeric": "The {field} must be a number",
+      "integer": "{field} must be a whole number. Example: 10, 15",
+      "date": "The {field} must be a valid date",
+      "after": "The {field} must be after {value}",
+      "before": "The {field} must be before {value}",
+      "image": "The {field} must be an image",
+      "mimes": "The {field} must be a file of type: {value}",
+      "max_file_size": "{field} cannot exceed {value} MB.",
+      "confirmed": "The {field} confirmation does not match",
+      "same": "The {field} must match {value}",
+      "exists": "The Selected {field} is invalid",
+      "password_requirements": "The {field} does not meet security requirements",
+      "decimal": "Update failed. Maximum allowed decimal places is {value}.",
+      "before_or_equal": "{field} must be on or before {value}.",
+      "after_or_equal": "{field} must be on or after {value}.",
+      "in": "Update failed. Only these values are allowed: {value}.",
+      "not_in": "Update failed. These values are not allowed: {value}."
+    }
+  },
+  "MRC": {
+    "invalid_value": "Update failed. Try again.",
+    "validation_rules": {
+      "not_in": "Update failed. These values are not allowed: {value}.",
+      "in": "Update failed. Only these values are allowed: {value}.",
+      "between": "Update failed. Enter a value between {value}."
+    },
+    "excess_decimal_places": "Update failed. Maximum allowed decimal places is {value}."
+  },
+  "WS": {
+    "invalid": "Workspace unavailable. You don't have access to this workspace.",
+    "require_otp": "Two-factor authentication required. Set up 2FA to access this workspace.",
+    "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings.",
+    "insufficient_ws_storage": "Upload failed. Workspace storage is full. Please contact your admin."
+  },
+  "PPL": {
+    "invite_deleted_user": "Invitation failed. Users deleted from the workspace can't be re-invited. Please contact support.",
+    "insufficient_seats": "Invitation failed. No seats remaining. Purchase seat(s) to continue.",
+    "invitee_account_mismatch": "This invitation can't be used with the account you're currently signed in with.",
+    "invalid_token": "Invitation invalid. Please request a new invitation."
+  },
+  "TM": {
+    "NO_ENTITY_TO_UNDEPLOY": "Undeploy failed. No entity specified.",
+    "NO_TEAM_EDITOR_ROLE": "No team editor role."
+  },
+  "DIR": {
+    "has_project_admin_access": "Update failed. User has project access by default.",
+    "NO_EDIT_ENTITY_TEAM_ACCESS": "Update failed. You don't have permission to edit this team.",
+    "parent_is_archived": "Unarchive failed. Unarchive parent first."
+  },
+  "DAR": {
+    "no_wbar_permission": "Access denied. You don't have permission to view this. Please contact your admin.",
+    "no_pbar_permission": "Access denied. You don't have permission to perform this action. Please contact your admin."
+  },
+  "AS": {
+    "tnc_not_accepted": "Terms & Conditions not accepted. Accept the Terms & Conditions to continue.",
+    "blocked": "Account blocked. Please contact support for assistance.",
+    "not_verified": "Verification required. Please verify your account.",
+    "not_found": "Account required. Create an account.",
+    "password_must_be_different": "Current password detected. Choose a different password.",
+    "invalid_otp": "Invalid code. Try again.",
+    "too_many_attempts": "Maximum attempts reached. Try again later."
+  },
+  "BLN": {
+    "no_license": "Subscription required. Purchase a subscription to continue."
+  },
+  "MDA": {
+    "delete_last_review_file": "Deletion failed. Cannot delete last review file. Delete rendition.",
+    "previous_marker_removed": "Update failed. This marker was removed. Reload to see the latest.",
+    "rendition_not_empty": "Deletion failed. This rendition has review files. Contact a supervisor or admin."
+  },
+  "custom_default_msg": {
+    "general": {
+      "invalid_data": "Invalid data. Check your input and try again.",
+      "retry": "Something went wrong. Try again later."
+    },
+    "network": {
+      "offline": "You're offline. Check your internet and try again.",
+      "request_timeout": "Request timed out. Check your internet and try again.",
+      "network_problem": "Request timed out. Check your internet and try again.",
+      "network_connection_lost": "Connection lost. Check your internet and try again.",
+      "gateway_timeout": "Server not responding. Try again later."
+    },
+    "auth": {
+      "token_expired": "Session expired. Taking you to the sign-in page…"
+    },
+    "storage": {
+      "storage_limit": "Upload failed. Storage limit reached. Contact your admin.",
+      "thumbnail_size_limit": "Upload failed. Thumbnail can't exceed 2 MB.",
+      "thumbnail_picture_format": "Upload failed. Thumbnail must be an image.",
+      "upload_limit": "Upload failed. File exceeds the maximum size."
+    }
+  },
+  "fallback": {
+    "unknownError": "An error occurred. Please try again or contact support."
+  }
+}
