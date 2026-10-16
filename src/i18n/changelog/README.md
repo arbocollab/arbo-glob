@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.5 - October 16, 2026
+
+### 🔧 Details
+- multiple copy change request
+- added `mrc.invalid_value`, `as.invalid_otp` and `as.too_many_attempts`
+
 ## v1.0.4 - August 26, 2026
 
 ### 🔧 Details
