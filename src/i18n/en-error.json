@@ -44,7 +44,7 @@
     "validation_rules": {
       "not_in": "Update failed. These values are not allowed: {value}.",
       "in": "Update failed. Only these values are allowed: {value}.",
-      "between": "Update failed. Enter a value between {value}."
+      "between": "Update failed. Enter a value between {min} and {max}."
     },
     "excess_decimal_places": "Update failed. Maximum allowed decimal places is {value}."
   },
