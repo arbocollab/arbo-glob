@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.6 - October 20, 2026
+
+### 🔧 Details
+- update `mrc.validation_rules.between` to support `{min}` and `{max}`
+
 ## v1.0.5 - October 16, 2026
 
 ### 🔧 Details
