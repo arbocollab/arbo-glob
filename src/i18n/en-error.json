@@ -54,6 +54,9 @@
     "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings.",
     "insufficient_ws_storage": "Upload failed. Workspace storage is full. Please contact your admin."
   },
+  "PT": {
+    "not_common_member": "Profile unavailable. You can only view active teammates."
+  },
   "PPL": {
     "invite_deleted_user": "Invitation failed. Users deleted from the workspace can't be re-invited. Please contact support.",
     "insufficient_seats": "Invitation failed. No seats remaining. Purchase seat(s) to continue.",

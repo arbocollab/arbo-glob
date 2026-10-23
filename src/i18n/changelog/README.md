@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.7 - October 23, 2026
+
+### 🔧 Details
+- added `pt.not_common_member`
+
 ## v1.0.6 - October 20, 2026
 
 ### 🔧 Details
