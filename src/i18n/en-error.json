@@ -36,7 +36,10 @@
       "before_or_equal": "{field} must be on or before {value}.",
       "after_or_equal": "{field} must be on or after {value}.",
       "in": "Update failed. Only these values are allowed: {value}.",
-      "not_in": "Update failed. These values are not allowed: {value}."
+      "not_in": "Update failed. These values are not allowed: {value}.",
+      "not_breached_password": "Not strong enough",
+      "no_context_words_in_password": "Not strong enough",
+      "no_password_pattern": "Not strong enough"
     }
   },
   "MRC": {
@@ -53,6 +56,9 @@
     "require_otp": "Two-factor authentication required. Set up 2FA to access this workspace.",
     "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings.",
     "insufficient_ws_storage": "Upload failed. Workspace storage is full. Please contact your admin."
+  },
+  "PT": {
+    "not_common_member": "Profile unavailable. You can only view active teammates."
   },
   "PPL": {
     "invite_deleted_user": "Invitation failed. Users deleted from the workspace can't be re-invited. Please contact support.",
