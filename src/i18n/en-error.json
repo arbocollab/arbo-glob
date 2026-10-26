@@ -36,7 +36,10 @@
       "before_or_equal": "{field} must be on or before {value}.",
       "after_or_equal": "{field} must be on or after {value}.",
       "in": "Update failed. Only these values are allowed: {value}.",
-      "not_in": "Update failed. These values are not allowed: {value}."
+      "not_in": "Update failed. These values are not allowed: {value}.",
+      "not_breached_password": "Not strong enough",
+      "no_context_words_in_password": "Not strong enough",
+      "no_password_pattern": "Not strong enough"
     }
   },
   "MRC": {
