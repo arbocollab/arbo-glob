@@ -37,9 +37,9 @@
       "after_or_equal": "{field} must be on or after {value}.",
       "in": "Update failed. Only these values are allowed: {value}.",
       "not_in": "Update failed. These values are not allowed: {value}.",
-      "not_breached_password": "Not strong enough",
-      "no_context_words_in_password": "Not strong enough",
-      "no_password_pattern": "Not strong enough"
+      "not_breached_password": "This password has appeared in a data breach. Choose a different one.",
+      "no_context_words_in_password": "Your password can't include your name, email, TESSR or words like animation.",
+      "no_password_pattern": "This password is too easy to guess. Avoid patterns like 1234 or qwerty."
     }
   },
   "MRC": {

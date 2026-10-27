@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.8 - October 27, 2026
+
+### 🔧 Details
+- updated `validation_rules.not_breached_password`, `validation_rules.no_context_words_in_password`, `validation_rules.no_password_pattern`,
+
 ## v1.0.7 - October 23, 2026
 
 ### 🔧 Details
