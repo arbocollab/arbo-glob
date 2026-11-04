@@ -1,4 +1,9 @@
 # Changelog
+## v1.0.5 - Nov 3, 2026
+
+### 🔧 Details
+- update pop up height and width for feedback-merge-lockup
+
 ## v1.0.4 - Oct 15, 2026
 
 ### 🔧 Details
