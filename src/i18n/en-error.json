@@ -18,7 +18,7 @@
       "email_exists": "{field} already exists in workspace {value}.",
       "regex": "The {field} format is invalid",
       "min": "{field} must be at least {value} characters",
-      "max": "{field} cannot exceed {value} characters",
+      "max": "{field} can't exceed {value} characters.",
       "between": "{field} must be between {min} and {max} characters.",
       "numeric": "The {field} must be a number",
       "integer": "{field} must be a whole number. Example: 10, 15",
@@ -27,7 +27,7 @@
       "before": "The {field} must be before {value}",
       "image": "The {field} must be an image",
       "mimes": "The {field} must be a file of type: {value}",
-      "max_file_size": "{field} cannot exceed {value} MB.",
+      "max_file_size": "{field} can't exceed {value} MB.",
       "confirmed": "The {field} confirmation does not match",
       "same": "The {field} must match {value}",
       "exists": "The Selected {field} is invalid",
@@ -93,14 +93,15 @@
     "no_license": "Subscription required. Purchase a subscription to continue."
   },
   "MDA": {
-    "delete_last_review_file": "Deletion failed. Cannot delete last review file. Delete rendition.",
+    "delete_last_review_file": "Deletion failed. Can't delete the last review file. Delete the rendition instead.",
     "previous_marker_removed": "Update failed. This marker was removed. Reload to see the latest.",
     "rendition_not_empty": "Deletion failed. This rendition has review files. Contact a supervisor or admin."
   },
   "custom_default_msg": {
     "general": {
       "invalid_data": "Invalid data. Check your input and try again.",
-      "retry": "Something went wrong. Try again later."
+      "retry": "Something went wrong. Try again later.",
+      "file_corrupted": "File is corrupted and can't be processed."
     },
     "network": {
       "offline": "You're offline. Check your internet and try again.",
