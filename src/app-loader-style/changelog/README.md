@@ -1,4 +1,9 @@
 # Changelog
+## v1.0.4 - Oct 15, 2026
+
+### 🔧 Details
+- fix pop up height and width for xlsx-toolbox
+
 ## v1.0.3 - Oct 9, 2026
 
 ### 🔧 Details
