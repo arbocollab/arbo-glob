@@ -39,7 +39,8 @@
       "not_in": "Update failed. These values are not allowed: {value}.",
       "not_breached_password": "This password has appeared in a data breach. Choose a different one.",
       "no_context_words_in_password": "Your password can't include your name, email, TESSR or words like animation.",
-      "no_password_pattern": "This password is too easy to guess. Avoid patterns like 1234 or qwerty."
+      "no_password_pattern": "This password is too easy to guess. Avoid patterns like 1234 or qwerty.",
+      "file_corrupted": "File is corrupted and can't be processed."
     }
   },
   "MRC": {
@@ -100,8 +101,7 @@
   "custom_default_msg": {
     "general": {
       "invalid_data": "Invalid data. Check your input and try again.",
-      "retry": "Something went wrong. Try again later.",
-      "file_corrupted": "File is corrupted and can't be processed."
+      "retry": "Something went wrong. Try again later."
     },
     "network": {
       "offline": "You're offline. Check your internet and try again.",

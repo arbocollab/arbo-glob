@@ -4,7 +4,7 @@
 
 ### 🔧 Details
 - updated `GEN.validation_rules.max`, `GEN.validation_rules.max_file_size`, `MDA.delete_last_review_file`
-- added `custom_default_msg.general.file_corrupted`
+- added `GEN.validation_rules.file_corrupted`
 
 ## v1.0.9 - October 27, 2026
 
