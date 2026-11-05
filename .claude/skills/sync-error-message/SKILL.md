@@ -1,11 +1,11 @@
 ---
-name: update-error-message
-description: Update TESSR error messages in arbo-glob (src/i18n/en-error.json) from ClickUp "Error code" tasks and publish them as a new i18n version (version snapshot folder plus changelog entry). Use this whenever someone asks to add, change, sync or publish error messages, apply a copywriter's copy change, bump the i18n or en-error version, or gives a task ID or link from the ClickUp Error code list (901603957966), even if they don't mention en-error.json. With no task given, it picks up the list's "to do" tasks.
+name: sync-error-message
+description: Sync TESSR error messages in arbo-glob (src/i18n/en-error.json) from ClickUp "Error code" tasks, publish them as a new i18n version (version snapshot folder plus changelog entry), then move the changed tasks to "in progress". Use this whenever someone says "update error message", "update error messages", "sync error message" or "sync error messages", or uses the old skill name update-error-message. Also use it when someone asks to add, change, sync or publish error messages, apply a copywriter's copy change, bump the i18n or en-error version, or gives a task ID or link from the ClickUp Error code list (901603957966), even if they don't mention en-error.json. With no task given, it picks up the list's "to do" tasks.
 ---
 
-# Update error message
+# Sync error message
 
-Turn ClickUp "Error code" tasks into changes in `src/i18n/en-error.json`, its version snapshot and the changelog. All the changes from one run go into a single version, with one snapshot and one changelog entry, however many tasks or keys are involved. Stop once the files are edited: no commit, no push, no ClickUp updates. The developer reviews the summary and does those steps.
+Turn ClickUp "Error code" tasks into changes in `src/i18n/en-error.json`, its version snapshot and the changelog. All the changes from one run go into a single version, with one snapshot and one changelog entry, however many tasks or keys are involved. After the files are edited and checked, move the changed tasks to "in progress" in ClickUp. Make no other ClickUp changes, and don't commit or push: the developer reviews the summary and does those steps.
 
 ## Background
 
@@ -39,15 +39,29 @@ Map each task to a key path with the rules in `references/key-mapping.md`. The m
 
 If the key path already exists in the file, this is an update. Otherwise it is a new key. If the same key name already exists elsewhere in the same module, ask before adding it.
 
-## Step 4: Choose the wording
+## Step 4: Choose the wording and the action
 
-Compare the "Error message" field with the value at the key path in the local `src/i18n/en-error.json`. First trim leading and trailing whitespace on both, because ClickUp fields often end with a newline. Otherwise compare exactly, so even a trailing period counts as a difference.
+Before every comparison, trim leading and trailing whitespace, because ClickUp fields often end with a newline. Otherwise compare exactly, so even a trailing period counts as a difference.
 
-- **Different, or the key is missing:** use the "Error message" field. If the task also has unresolved comments, list them in the summary as open questions, because they may ask for something newer.
-- **The same:** read the task's unresolved comments, plus the threaded replies of any comment that has replies.
-  - A copywriter comment that starts with "Copy change requested" gives the new wording after "New (copy from below):". If a reply revises it, use the latest revision. If there are several, use the newest.
-  - For any other unresolved comment that seems to ask for a change, show it to the user and ask instead of guessing.
-  - With no unresolved comments, the task needs no change.
+Two values are compared:
+- **Local:** the value at the key path in `src/i18n/en-error.json` on disk.
+- **Baseline:** the value in the baseline branch. Work out the baseline now, as described in Step 5, item 1 (fetch `origin/dev`, or fall back to local `dev`), and read the file with `git show <baseline>:src/i18n/en-error.json`. Step 5 then reuses the same baseline.
+
+1. Pick the target wording.
+   - If the "Error message" field differs from local, or the key is missing locally, the target is the field.
+     - Exception: if local already equals the new wording of an unresolved copy-change comment, an earlier run applied that comment. The target is then the comment's wording, so the change isn't undone.
+   - If the field equals local, read the unresolved comments, plus the threaded replies of any comment that has replies.
+     - A copywriter comment that starts with "Copy change requested" gives the new wording after "New (copy from below):". That wording is the target. If a reply revises it, use the latest revision. If there are several such comments, use the newest.
+     - For any other unresolved comment that seems to ask for a change, show it to the user and ask instead of guessing.
+     - With no unresolved comments, the target is the field.
+   - If the target is the field and the task also has unresolved comments, list them in the summary as open questions, because they may ask for something newer.
+2. Pick the action by comparing the target with local and baseline:
+
+| Target vs local | Target vs baseline | Action |
+| :- | :- | :- |
+| Different, or key missing locally | Any | **Update:** edit the file in Step 6, and move the task to "in progress" in Step 8. |
+| Same | Different, or key missing in baseline | **Already in this branch:** edit nothing, but still move the task to "in progress" in Step 8. |
+| Same | Same | **Already released:** edit nothing and leave the status alone. Flag it in the summary, because a "to do" task that is already released probably has the wrong status. |
 
 Ignore resolved comments, because they are normally already in the field. Copy the chosen wording exactly and don't restyle it.
 
@@ -63,7 +77,7 @@ All the changes go into one version. A branch also keeps that one version, howev
 
 ## Step 6: Edit the files
 
-Apply every change in the batch to the latest file first, then make the snapshot and the changelog entry once. If no task needs a change, edit nothing (no new version folder, no changelog bullet) and go to the summary.
+Apply every update in the batch to the latest file first, then make the snapshot and the changelog entry once. If no task needs an update, edit nothing (no new version folder, no changelog bullet), skip Step 7 and go to Step 8, because tasks already in this branch may still need their status moved.
 
 1. `src/i18n/en-error.json`:
    - Update an existing value in place, keeping the key's position.
@@ -84,15 +98,26 @@ Apply every change in the batch to the latest file first, then make the snapshot
 - `git diff <baseline> -- src/i18n/en-error.json` shows only the intended keys.
 - `git status --short src/i18n` lists the new version folder. A plain `git diff` doesn't show untracked files.
 - Each changed message keeps the placeholders it had before. If they changed, flag it, because the API must send matching values.
+- For tasks already in this branch, check that this branch's version folder and changelog entry include their keys. If they don't (for example, the file was edited by hand), flag it in the summary rather than fixing it.
 
-## Step 8: Summary
+## Step 8: Mark the tasks in progress
+
+Set the status of every task with the action "update" (shown as added or updated in the summary) or "already in this branch" to "in progress". Do this only after the Step 7 checks pass, or straight away when nothing was edited. The status tells the team the change is in a branch.
+
+- Leave these tasks as they are: tasks already released, skipped tasks, tasks still waiting on an answer from the user, and tasks already "in progress".
+- If a task is further along (for example "qa ready", "in review", "accepted" or "Closed"), ask the user before moving it back.
+- For several tasks, update them in one call with `clickup_execute_operator` (`task.update_many`, after checking its parameters with `clickup_get_operators`). For a single task, use `clickup_update_task`.
+- If an update fails, report it in the summary and carry on. The file changes stand.
+
+## Step 9: Summary
 
 Reply with:
 - The version, and whether it is new or reused.
-- A table: task | key path | added, updated or no change | wording source (field or comment) | old wording, new wording. Write each task as an inline markdown link with the task name as the text, for example `[numeric](https://app.clickup.com/t/14zg7e2kzgc)`.
+- A table: task | key path | action (added, updated, already in this branch or already released) | wording source (field or comment) | old wording, new wording. Write each task as an inline markdown link with the task name as the text, for example `[numeric](https://app.clickup.com/t/14zg7e2kzgc)`.
 - Skipped tasks and the reasons, plus any open questions.
 - The files changed, and the checks run with their results.
+- The tasks moved to "in progress", and any that weren't moved, with the reason.
 - Next steps for the developer:
   - Commit and open a PR into `dev`.
   - After the merge, purge the CDN cache for the file, because the Makefile doesn't cover it: `curl https://purge.jsdelivr.net/gh/arbocollab/arbo-glob@dev/src/i18n/en-error.json`. Do the same with `@live` after the live merge.
-  - Update the ClickUp tasks (PR link comment, status) as the team usually does. For tasks whose wording came from a comment, also update the "Error message" field so it matches the file.
+  - Add the PR link to the ClickUp tasks and move them on (for example to "qa ready") as the team usually does. For tasks whose wording came from a comment, also update the "Error message" field so it matches the file.
