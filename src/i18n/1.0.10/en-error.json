@@ -88,7 +88,8 @@
     "not_found": "Account required. Create an account.",
     "password_must_be_different": "Current password detected. Choose a different password.",
     "invalid_otp": "Invalid code. Try again.",
-    "too_many_attempts": "Maximum attempts reached. Try again later."
+    "too_many_attempts": "Maximum attempts reached. Try again later.",
+    "password_change_required": "Your account uses a temporary password. Change your password to continue."
   },
   "BLN": {
     "no_license": "Subscription required. Purchase a subscription to continue."

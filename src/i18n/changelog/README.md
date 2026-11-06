@@ -4,7 +4,7 @@
 
 ### 🔧 Details
 - updated `GEN.validation_rules.max`, `GEN.validation_rules.max_file_size`, `MDA.delete_last_review_file`
-- added `GEN.validation_rules.file_corrupted`
+- added `GEN.validation_rules.file_corrupted`, `AS.password_change_required`
 
 ## v1.0.9 - October 27, 2026
 
