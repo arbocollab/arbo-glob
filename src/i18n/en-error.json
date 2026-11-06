@@ -18,7 +18,7 @@
       "email_exists": "{field} already exists in workspace {value}.",
       "regex": "The {field} format is invalid",
       "min": "{field} must be at least {value} characters",
-      "max": "{field} cannot exceed {value} characters",
+      "max": "{field} can't exceed {value} characters.",
       "between": "{field} must be between {min} and {max} characters.",
       "numeric": "The {field} must be a number",
       "integer": "{field} must be a whole number. Example: 10, 15",
@@ -27,7 +27,7 @@
       "before": "The {field} must be before {value}",
       "image": "The {field} must be an image",
       "mimes": "The {field} must be a file of type: {value}",
-      "max_file_size": "{field} cannot exceed {value} MB.",
+      "max_file_size": "{field} can't exceed {value} MB.",
       "confirmed": "The {field} confirmation does not match",
       "same": "The {field} must match {value}",
       "exists": "The Selected {field} is invalid",
@@ -39,7 +39,8 @@
       "not_in": "Update failed. These values are not allowed: {value}.",
       "not_breached_password": "This password has appeared in a data breach. Choose a different one.",
       "no_context_words_in_password": "Your password can't include your name, email, TESSR or words like animation.",
-      "no_password_pattern": "This password is too easy to guess. Avoid patterns like 1234 or qwerty."
+      "no_password_pattern": "This password is too easy to guess. Avoid patterns like 1234 or qwerty.",
+      "file_corrupted": "File is corrupted and can't be processed."
     }
   },
   "MRC": {
@@ -87,13 +88,14 @@
     "not_found": "Account required. Create an account.",
     "password_must_be_different": "Current password detected. Choose a different password.",
     "invalid_otp": "Invalid code. Try again.",
-    "too_many_attempts": "Maximum attempts reached. Try again later."
+    "too_many_attempts": "Maximum attempts reached. Try again later.",
+    "password_change_required": "Your account uses a temporary password. Change your password to continue."
   },
   "BLN": {
     "no_license": "Subscription required. Purchase a subscription to continue."
   },
   "MDA": {
-    "delete_last_review_file": "Deletion failed. Cannot delete last review file. Delete rendition.",
+    "delete_last_review_file": "Deletion failed. Can't delete the last review file. Delete the rendition instead.",
     "previous_marker_removed": "Update failed. This marker was removed. Reload to see the latest.",
     "rendition_not_empty": "Deletion failed. This rendition has review files. Contact a supervisor or admin."
   },

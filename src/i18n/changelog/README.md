@@ -1,6 +1,12 @@
 # Changelog
 
-## v1.0.8 - October 27, 2026
+## v1.0.10 - November 4, 2026
+
+### 🔧 Details
+- updated `GEN.validation_rules.max`, `GEN.validation_rules.max_file_size`, `MDA.delete_last_review_file`
+- added `GEN.validation_rules.file_corrupted`, `AS.password_change_required`
+
+## v1.0.9 - October 27, 2026
 
 ### 🔧 Details
 - added `MRC.validation_rules.numeric`
