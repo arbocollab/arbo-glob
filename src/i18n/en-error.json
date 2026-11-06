@@ -69,12 +69,12 @@
     "invalid_token": "Invitation invalid. Please request a new invitation."
   },
   "TM": {
-    "NO_ENTITY_TO_UNDEPLOY": "Undeploy failed. No entity specified.",
-    "NO_TEAM_EDITOR_ROLE": "No team editor role."
+    "no_entity_to_undeploy": "Undeploy failed. No entity specified.",
+    "no_team_editor_role": "No team editor role."
   },
   "DIR": {
     "has_project_admin_access": "Update failed. User has project access by default.",
-    "NO_EDIT_ENTITY_TEAM_ACCESS": "Update failed. You don't have permission to edit this team.",
+    "no_edit_entity_team_access": "Update failed. You don't have permission to edit this team.",
     "parent_is_archived": "Unarchive failed. Unarchive parent first."
   },
   "DAR": {

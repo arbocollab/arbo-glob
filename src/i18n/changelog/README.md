@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.11 - November 6, 2026
+
+### 🔧 Details
+- renamed keys to lower case so they match the key dev-api sends: `TM.no_entity_to_undeploy` ([E-0-TM-1](https://app.clickup.com/t/86d10kncm)), `TM.no_team_editor_role` ([E-0-TM-2](https://app.clickup.com/t/86d10m7ea)), `DIR.no_edit_entity_team_access` ([E-0-DIR-2](https://app.clickup.com/t/86d12nef9))
+
 ## v1.0.10 - November 4, 2026
 
 ### 🔧 Details
