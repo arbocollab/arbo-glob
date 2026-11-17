@@ -99,6 +99,15 @@
     "previous_marker_removed": "Update failed. This marker was removed. Reload to see the latest.",
     "rendition_not_empty": "Deletion failed. This rendition has review files. Contact a supervisor or admin."
   },
+  "NAS": {
+    "invalid_sync_key": "Sync key rejected. Generate a new key for this workspace.",
+    "folder_not_linked": "Folder not linked. No take is linked to this NAS folder.",
+    "scene_not_found": "Scene not found. No scene with this file name in the linked take.",
+    "scene_name_not_unique": "Scene name not unique. More than one scene in the linked take has this name.",
+    "status_change_not_allowed": "Status change not allowed. The scene cannot move to the linked status.",
+    "relay_not_configured": "Support tunnel unavailable. The relay server is not set up on this environment.",
+    "invalid_relay_token": "Relay token rejected. Check the relay token on the relay server."
+  },
   "custom_default_msg": {
     "general": {
       "invalid_data": "Invalid data. Check your input and try again.",

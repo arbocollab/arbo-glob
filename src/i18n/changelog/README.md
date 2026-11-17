@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.12 - November 17, 2026
+
+### 🔧 Details
+- added `NAS.invalid_sync_key` ([E-0-NAS-1](https://app.clickup.com/t/14zg7e2nqpx)), `NAS.folder_not_linked` ([E-0-NAS-2](https://app.clickup.com/t/14zg7e2nqpy)), `NAS.scene_not_found` ([E-0-NAS-3](https://app.clickup.com/t/14zg7e2nqpz)), `NAS.scene_name_not_unique` ([E-0-NAS-4](https://app.clickup.com/t/14zg7e2nqq0)), `NAS.status_change_not_allowed` ([E-0-NAS-5](https://app.clickup.com/t/14zg7e2nqq1)), `NAS.relay_not_configured` ([E-0-NAS-6](https://app.clickup.com/t/14zg7e2nqq2)), `NAS.invalid_relay_token` ([E-0-NAS-7](https://app.clickup.com/t/14zg7e2nqq4))
+
 ## v1.0.11 - November 6, 2026
 
 ### 🔧 Details
