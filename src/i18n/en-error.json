@@ -89,7 +89,10 @@
     "password_must_be_different": "Current password detected. Choose a different password.",
     "invalid_otp": "Invalid code. Try again.",
     "too_many_attempts": "Maximum attempts reached. Try again later.",
-    "password_change_required": "Your account uses a temporary password. Change your password to continue."
+    "password_change_required": "Your account uses a temporary password. Change your password to continue.",
+    "mfa_required_by_workspace": "Stronger sign-in required. A workspace you're in needs a stronger method.",
+    "app_mfa_enabled": "Authenticator app is on. Turn it off before choosing a weaker method.",
+    "email_setup_not_started": "Code required. Enter the code we emailed you before turning on email sign-in."
   },
   "BLN": {
     "no_license": "Subscription required. Purchase a subscription to continue."

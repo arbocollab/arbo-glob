@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.12 - November 17, 2026
+
+### 🔧 Details
+- added `AS.mfa_required_by_workspace` (E-0-AS-9), `AS.app_mfa_enabled` (E-0-AS-10), `AS.email_setup_not_started` (E-0-AS-11) for the personal MFA choice ([CU-14zg7e2mdtw](https://app.clickup.com/t/14zg7e2mdtw)); library tasks named E-0-AS-9/10/11
+
 ## v1.0.11 - November 6, 2026
 
 ### 🔧 Details
