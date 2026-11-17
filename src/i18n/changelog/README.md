@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.12 - November 17, 2026
+
+### 🔧 Details
+- added `BLN.limit_reached`, `BLN.unavailable`, `GEN.confirmation_required`
+
 ## v1.0.11 - November 6, 2026
 
 ### 🔧 Details
