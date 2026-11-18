@@ -90,9 +90,9 @@
     "invalid_otp": "Invalid code. Try again.",
     "too_many_attempts": "Maximum attempts reached. Try again later.",
     "password_change_required": "Your account uses a temporary password. Change your password to continue.",
-    "mfa_required_by_workspace": "Stronger sign-in required. A workspace you're in needs a stronger method.",
-    "app_mfa_enabled": "Authenticator app is on. Turn it off before choosing a weaker method.",
-    "email_setup_not_started": "Code required. Enter the code we emailed you before turning on email sign-in."
+    "mfa_required_by_workspace": "Change not allowed. A workspace you're in requires {method}.",
+    "app_mfa_enabled": "Authenticator app is on. Disable it to use email codes instead.",
+    "email_setup_not_started": "Invalid code. Enter the setup code we emailed you."
   },
   "BLN": {
     "no_license": "Subscription required. Purchase a subscription to continue."
