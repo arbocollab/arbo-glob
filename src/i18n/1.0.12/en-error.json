@@ -108,9 +108,12 @@
     "scene_not_found": "Not found. No {task} in the linked {parent} matches this file name.",
     "scene_name_not_unique": "Name not unique. More than one {task} in the linked {parent} has this name. Rename them so each is unique.",
     "status_change_not_allowed": "Status change failed. This change isn’t allowed.",
+    "scene_in_two_folders": "Status not changed. This {task} is in two status folders. Keep it in one only.",
+    "same_file_in_two_folders": "Status not changed. This file is in two linked folders. Remove one copy.",
     "folder_not_linked_fallback": "Folder not linked. Link this server folder to a folder in TESSR.",
     "scene_not_found_fallback": "Not found. No item in the linked folder matches this file name.",
-    "scene_name_not_unique_fallback": "Name not unique. More than one item in the linked folder has this name. Rename them so each is unique."
+    "scene_name_not_unique_fallback": "Name not unique. More than one item in the linked folder has this name. Rename them so each is unique.",
+    "scene_in_two_folders_fallback": "Status not changed. This item is in two status folders. Keep it in one only."
   },
   "custom_default_msg": {
     "general": {
