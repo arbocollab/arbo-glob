@@ -10,6 +10,7 @@
     "too_many_attempts": "Too many requests. Wait a moment and try again.",
     "server_error": "Something went wrong on our end. Try again later.",
     "expired": "Link expired. Request a new one and try again.",
+    "confirmation_required": "Confirmation required. Confirm the action to continue.",
     "validation_rules": {
       "required": "{field} is required.",
       "unique": "The {field} field must be unique",
@@ -92,7 +93,9 @@
     "password_change_required": "Your account uses a temporary password. Change your password to continue."
   },
   "BLN": {
-    "no_license": "Subscription required. Purchase a subscription to continue."
+    "no_license": "Subscription required. Purchase a subscription to continue.",
+    "limit_reached": "Plan limit reached. Delete what you no longer need, or ask an admin to upgrade the plan.",
+    "unavailable": "Billing unavailable. Try again later."
   },
   "MDA": {
     "delete_last_review_file": "Deletion failed. Can't delete the last review file. Delete the rendition instead.",
