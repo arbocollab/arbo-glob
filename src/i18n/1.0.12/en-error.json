@@ -94,7 +94,7 @@
   },
   "BLN": {
     "no_license": "Subscription required. Purchase a subscription to continue.",
-    "limit_reached": "Plan limit reached. Upgrade your plan to continue.",
+    "limit_reached": "Plan limit reached. Delete what you no longer need, or ask an admin to upgrade the plan.",
     "unavailable": "Billing unavailable. Try again later."
   },
   "MDA": {
