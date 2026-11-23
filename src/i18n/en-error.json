@@ -10,6 +10,7 @@
     "too_many_attempts": "Too many requests. Wait a moment and try again.",
     "server_error": "Something went wrong on our end. Try again later.",
     "expired": "Link expired. Request a new one and try again.",
+    "confirmation_required": "Confirmation required. Confirm the action to continue.",
     "validation_rules": {
       "required": "{field} is required.",
       "unique": "The {field} field must be unique",
@@ -18,7 +19,7 @@
       "email_exists": "{field} already exists in workspace {value}.",
       "regex": "The {field} format is invalid",
       "min": "{field} must be at least {value} characters",
-      "max": "{field} cannot exceed {value} characters",
+      "max": "{field} can't exceed {value} characters.",
       "between": "{field} must be between {min} and {max} characters.",
       "numeric": "The {field} must be a number",
       "integer": "{field} must be a whole number. Example: 10, 15",
@@ -27,7 +28,7 @@
       "before": "The {field} must be before {value}",
       "image": "The {field} must be an image",
       "mimes": "The {field} must be a file of type: {value}",
-      "max_file_size": "{field} cannot exceed {value} MB.",
+      "max_file_size": "{field} can't exceed {value} MB.",
       "confirmed": "The {field} confirmation does not match",
       "same": "The {field} must match {value}",
       "exists": "The Selected {field} is invalid",
@@ -36,7 +37,11 @@
       "before_or_equal": "{field} must be on or before {value}.",
       "after_or_equal": "{field} must be on or after {value}.",
       "in": "Update failed. Only these values are allowed: {value}.",
-      "not_in": "Update failed. These values are not allowed: {value}."
+      "not_in": "Update failed. These values are not allowed: {value}.",
+      "not_breached_password": "This password has appeared in a data breach. Choose a different one.",
+      "no_context_words_in_password": "Your password can't include your name, email, TESSR or words like animation.",
+      "no_password_pattern": "This password is too easy to guess. Avoid patterns like 1234 or qwerty.",
+      "file_corrupted": "File is corrupted and can't be processed."
     }
   },
   "MRC": {
@@ -44,7 +49,8 @@
     "validation_rules": {
       "not_in": "Update failed. These values are not allowed: {value}.",
       "in": "Update failed. Only these values are allowed: {value}.",
-      "between": "Update failed. Enter a value between {min} and {max}."
+      "between": "Update failed. Enter a value between {min} and {max}.",
+      "numeric": "Update failed. Value must be a number. Example: 10, 25.75"
     },
     "excess_decimal_places": "Update failed. Maximum allowed decimal places is {value}."
   },
@@ -54,6 +60,9 @@
     "pending_deletion": "Workspace pending deletion. You've been redirected to Workspace settings.",
     "insufficient_ws_storage": "Upload failed. Workspace storage is full. Please contact your admin."
   },
+  "PT": {
+    "not_common_member": "Profile unavailable. You can only view active teammates."
+  },
   "PPL": {
     "invite_deleted_user": "Invitation failed. Users deleted from the workspace can't be re-invited. Please contact support.",
     "insufficient_seats": "Invitation failed. No seats remaining. Purchase seat(s) to continue.",
@@ -61,12 +70,12 @@
     "invalid_token": "Invitation invalid. Please request a new invitation."
   },
   "TM": {
-    "NO_ENTITY_TO_UNDEPLOY": "Undeploy failed. No entity specified.",
-    "NO_TEAM_EDITOR_ROLE": "No team editor role."
+    "no_entity_to_undeploy": "Undeploy failed. No entity specified.",
+    "no_team_editor_role": "No team editor role."
   },
   "DIR": {
     "has_project_admin_access": "Update failed. User has project access by default.",
-    "NO_EDIT_ENTITY_TEAM_ACCESS": "Update failed. You don't have permission to edit this team.",
+    "no_edit_entity_team_access": "Update failed. You don't have permission to edit this team.",
     "parent_is_archived": "Unarchive failed. Unarchive parent first."
   },
   "DAR": {
@@ -80,13 +89,16 @@
     "not_found": "Account required. Create an account.",
     "password_must_be_different": "Current password detected. Choose a different password.",
     "invalid_otp": "Invalid code. Try again.",
-    "too_many_attempts": "Maximum attempts reached. Try again later."
+    "too_many_attempts": "Maximum attempts reached. Try again later.",
+    "password_change_required": "Your account uses a temporary password. Change your password to continue."
   },
   "BLN": {
-    "no_license": "Subscription required. Purchase a subscription to continue."
+    "no_license": "Subscription required. Purchase a subscription to continue.",
+    "limit_reached": "Plan limit reached. Delete what you no longer need, or ask an admin to upgrade the plan.",
+    "unavailable": "Billing unavailable. Try again later."
   },
   "MDA": {
-    "delete_last_review_file": "Deletion failed. Cannot delete last review file. Delete rendition.",
+    "delete_last_review_file": "Deletion failed. Can't delete the last review file. Delete the rendition instead.",
     "previous_marker_removed": "Update failed. This marker was removed. Reload to see the latest.",
     "rendition_not_empty": "Deletion failed. This rendition has review files. Contact a supervisor or admin."
   },

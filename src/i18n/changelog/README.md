@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.0.12 - November 17, 2026
+
+### 🔧 Details
+- added `BLN.limit_reached`, `BLN.unavailable`, `GEN.confirmation_required`
+
+## v1.0.11 - November 6, 2026
+
+### 🔧 Details
+- renamed keys to lower case so they match the key dev-api sends: `TM.no_entity_to_undeploy` ([E-0-TM-1](https://app.clickup.com/t/86d10kncm)), `TM.no_team_editor_role` ([E-0-TM-2](https://app.clickup.com/t/86d10m7ea)), `DIR.no_edit_entity_team_access` ([E-0-DIR-2](https://app.clickup.com/t/86d12nef9))
+
+## v1.0.10 - November 4, 2026
+
+### 🔧 Details
+- updated `GEN.validation_rules.max`, `GEN.validation_rules.max_file_size`, `MDA.delete_last_review_file`
+- added `GEN.validation_rules.file_corrupted`, `AS.password_change_required`
+
+## v1.0.9 - October 27, 2026
+
+### 🔧 Details
+- added `MRC.validation_rules.numeric`
+
+## v1.0.8 - October 27, 2026
+
+### 🔧 Details
+- updated `validation_rules.not_breached_password`, `validation_rules.no_context_words_in_password`, `validation_rules.no_password_pattern`
+
+## v1.0.7 - October 23, 2026
+
+### 🔧 Details
+- added `pt.not_common_member`, `validation_rules.not_breached_password`, `validation_rules.no_context_words_in_password`, `validation_rules.no_password_pattern`
+
 ## v1.0.6 - October 20, 2026
 
 ### 🔧 Details
