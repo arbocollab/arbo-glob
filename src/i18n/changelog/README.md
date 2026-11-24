@@ -8,6 +8,7 @@
 - added fallback titles `NAS.folder_not_linked_fallback`, `NAS.scene_not_found_fallback`, `NAS.scene_name_not_unique_fallback`, `NAS.scene_in_two_folders_fallback` (shown when the workspace level names are missing)
 - added `NAS.scene_in_two_folders` ([E-0-NAS-8](https://app.clickup.com/t/14zg7e2nz7g)), `NAS.same_file_in_two_folders` ([E-0-NAS-9](https://app.clickup.com/t/14zg7e2nz7h))
 - added `NAS.sync_failed` ([E-0-NAS-10](https://app.clickup.com/t/14zg7e2p992))
+- added `NAS.folder_outside_shares` ([E-0-NAS-11](https://app.clickup.com/t/14zg7e2p9cj))
 
 ## v1.0.11 - November 6, 2026
 
