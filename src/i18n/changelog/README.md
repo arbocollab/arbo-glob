@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.12 - November 17, 2026
+## v1.0.13 - November 24, 2026
 
 ### 🔧 Details
 - added `AS.mfa_required_by_workspace` ([E-0-AS-9](https://app.clickup.com/t/14zg7e2npm0)), `AS.app_mfa_enabled` ([E-0-AS-10](https://app.clickup.com/t/14zg7e2npmz)), `AS.email_setup_not_started` ([E-0-AS-11](https://app.clickup.com/t/14zg7e2npn0)) for the personal MFA choice ([CU-14zg7e2mdtw](https://app.clickup.com/t/14zg7e2mdtw))
@@ -9,6 +9,12 @@
 - added `NAS.scene_in_two_folders` ([E-0-NAS-8](https://app.clickup.com/t/14zg7e2nz7g)), `NAS.same_file_in_two_folders` ([E-0-NAS-9](https://app.clickup.com/t/14zg7e2nz7h))
 - added `NAS.sync_failed` ([E-0-NAS-10](https://app.clickup.com/t/14zg7e2p992))
 - added `NAS.folder_outside_shares` ([E-0-NAS-11](https://app.clickup.com/t/14zg7e2p9cj))
+- added `GEN.validation_rules.no_repeated_password_pattern` for the password repeat check ([CU-14zg7e2pam6](https://app.clickup.com/t/14zg7e2pam6))
+
+## v1.0.12 - November 17, 2026
+
+### 🔧 Details
+- added `BLN.limit_reached`, `BLN.unavailable`, `GEN.confirmation_required`
 
 ## v1.0.11 - November 6, 2026
 

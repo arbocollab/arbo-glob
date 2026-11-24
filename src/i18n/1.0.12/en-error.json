@@ -10,6 +10,7 @@
     "too_many_attempts": "Too many requests. Wait a moment and try again.",
     "server_error": "Something went wrong on our end. Try again later.",
     "expired": "Link expired. Request a new one and try again.",
+    "confirmation_required": "Confirmation required. Confirm the action to continue.",
     "validation_rules": {
       "required": "{field} is required.",
       "unique": "The {field} field must be unique",
@@ -89,33 +90,17 @@
     "password_must_be_different": "Current password detected. Choose a different password.",
     "invalid_otp": "Invalid code. Try again.",
     "too_many_attempts": "Maximum attempts reached. Try again later.",
-    "password_change_required": "Your account uses a temporary password. Change your password to continue.",
-    "mfa_required_by_workspace": "Change not allowed. A workspace you're in requires {method}.",
-    "app_mfa_enabled": "Authenticator app is on. Disable it to use email codes instead.",
-    "email_setup_not_started": "Invalid code. Enter the setup code we emailed you."
+    "password_change_required": "Your account uses a temporary password. Change your password to continue."
   },
   "BLN": {
-    "no_license": "Subscription required. Purchase a subscription to continue."
+    "no_license": "Subscription required. Purchase a subscription to continue.",
+    "limit_reached": "Plan limit reached. Delete what you no longer need, or ask an admin to upgrade the plan.",
+    "unavailable": "Billing unavailable. Try again later."
   },
   "MDA": {
     "delete_last_review_file": "Deletion failed. Can't delete the last review file. Delete the rendition instead.",
     "previous_marker_removed": "Update failed. This marker was removed. Reload to see the latest.",
     "rendition_not_empty": "Deletion failed. This rendition has review files. Contact a supervisor or admin."
-  },
-  "NAS": {
-    "invalid_sync_key": "Sync key rejected. Generate a new key for this workspace.",
-    "folder_not_linked": "Folder not linked. Link this server folder to the right {parent} in TESSR.",
-    "scene_not_found": "Not found. No {task} in the linked {parent} matches this file name.",
-    "scene_name_not_unique": "Name not unique. More than one {task} in the linked {parent} has this name. Rename them so each is unique.",
-    "status_change_not_allowed": "Status change failed. This change isn’t allowed.",
-    "scene_in_two_folders": "Status not changed. This {task} is in two status folders. Keep it in one only.",
-    "same_file_in_two_folders": "Status not changed. This file is in two linked folders. Remove one copy.",
-    "sync_failed": "Status not changed. TESSR could not apply this change. Move the file again to retry.",
-    "folder_outside_shares": "Folder is outside the shared NAS folders. The NAS sync does not read it.",
-    "folder_not_linked_fallback": "Folder not linked. Link this server folder to a folder in TESSR.",
-    "scene_not_found_fallback": "Not found. No item in the linked folder matches this file name.",
-    "scene_name_not_unique_fallback": "Name not unique. More than one item in the linked folder has this name. Rename them so each is unique.",
-    "scene_in_two_folders_fallback": "Status not changed. This item is in two status folders. Keep it in one only."
   },
   "custom_default_msg": {
     "general": {

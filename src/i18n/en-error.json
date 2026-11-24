@@ -10,6 +10,7 @@
     "too_many_attempts": "Too many requests. Wait a moment and try again.",
     "server_error": "Something went wrong on our end. Try again later.",
     "expired": "Link expired. Request a new one and try again.",
+    "confirmation_required": "Confirmation required. Confirm the action to continue.",
     "validation_rules": {
       "required": "{field} is required.",
       "unique": "The {field} field must be unique",
@@ -40,6 +41,7 @@
       "not_breached_password": "This password has appeared in a data breach. Choose a different one.",
       "no_context_words_in_password": "Your password can't include your name, email, TESSR or words like animation.",
       "no_password_pattern": "This password is too easy to guess. Avoid patterns like 1234 or qwerty.",
+      "no_repeated_password_pattern": "This password is too easy to guess. Avoid repeats like aaaa or abcabc.",
       "file_corrupted": "File is corrupted and can't be processed."
     }
   },
@@ -95,7 +97,9 @@
     "email_setup_not_started": "Invalid code. Enter the setup code we emailed you."
   },
   "BLN": {
-    "no_license": "Subscription required. Purchase a subscription to continue."
+    "no_license": "Subscription required. Purchase a subscription to continue.",
+    "limit_reached": "Plan limit reached. Delete what you no longer need, or ask an admin to upgrade the plan.",
+    "unavailable": "Billing unavailable. Try again later."
   },
   "MDA": {
     "delete_last_review_file": "Deletion failed. Can't delete the last review file. Delete the rendition instead.",
