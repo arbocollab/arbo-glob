@@ -21,8 +21,8 @@
       "min": "{field} must be at least {value} characters",
       "max": "{field} can't exceed {value} characters.",
       "between": "{field} must be between {min} and {max} characters.",
-      "numeric": "The {field} must be a number",
-      "integer": "{field} must be a whole number. Example: 10, 15",
+      "numeric": "{field} must be a number. Example: 10, 25.75.",
+      "integer": "{field} must be a whole number. Example: 10, 15.",
       "date": "The {field} must be a valid date",
       "after": "The {field} must be after {value}",
       "before": "The {field} must be before {value}",
@@ -51,7 +51,7 @@
       "not_in": "Update failed. These values are not allowed: {value}.",
       "in": "Update failed. Only these values are allowed: {value}.",
       "between": "Update failed. Enter a value between {min} and {max}.",
-      "numeric": "Update failed. Value must be a number. Example: 10, 25.75"
+      "numeric": "Update failed. Value must be a number. Example: 10, 25.75."
     },
     "excess_decimal_places": "Update failed. Maximum allowed decimal places is {value}."
   },
@@ -94,7 +94,8 @@
     "password_change_required": "Your account uses a temporary password. Change your password to continue.",
     "mfa_required_by_workspace": "Change not allowed. A workspace you're in requires {method}.",
     "app_mfa_enabled": "Authenticator app is on. Disable it to use email codes instead.",
-    "email_setup_not_started": "Invalid code. Enter the setup code we emailed you."
+    "email_setup_not_started": "Invalid code. Enter the setup code we emailed you.",
+    "owned_workspaces_have_members": "Deletion failed. You own workspaces that have other active members. Transfer ownership or delete each one to continue."
   },
   "BLN": {
     "no_license": "Subscription required. Purchase a subscription to continue.",

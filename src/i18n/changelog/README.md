@@ -10,6 +10,8 @@
 - added `NAS.sync_failed` ([E-0-NAS-10](https://app.clickup.com/t/14zg7e2p992))
 - added `NAS.folder_outside_shares` ([E-0-NAS-11](https://app.clickup.com/t/14zg7e2p9cj))
 - added `GEN.validation_rules.no_repeated_password_pattern` for the password repeat check ([CU-14zg7e2pam6](https://app.clickup.com/t/14zg7e2pam6))
+- added `AS.owned_workspaces_have_members` ([E-0-AS-12](https://app.clickup.com/t/14zg7e2p8qw))
+- updated `GEN.validation_rules.integer`, `GEN.validation_rules.numeric`, `MRC.validation_rules.numeric`
 
 ## v1.0.12 - November 17, 2026
 
